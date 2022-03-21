@@ -7,6 +7,13 @@
   :hidden:
 
   Server_Suite/lab1/lab1
+  Server_Suite/lab2/lab2
+  Server_Suite/lab3/lab3
+  Server_Suite/lab4/lab4
+  Server_Suite/lab5/lab5
+  Server_Suite/lab6/lab6
+  Server_Suite/lab7/lab7
+  Server_Suite/lab10/lab10
   
 .. toctree::
   :maxdepth: 2
