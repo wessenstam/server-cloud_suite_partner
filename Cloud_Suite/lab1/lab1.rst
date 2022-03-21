@@ -27,7 +27,7 @@ Systems used in this lab:
 
 - dc-server.greensafe.lab
 - apps-server.greensafe.lab
-- https://<tenant>.my.centrify.net
+- \https://<tenant>.my.centrify.net
 
 ------
 
@@ -41,7 +41,7 @@ In this exercise, Alex (you) will login to the Centrify Identity Platform and pe
    - **Username:** afoster
    - **Password:** *Provided by Trainer*
 
-#. Launch Google Chrome and browse to your unique Identity Platform URL https://<tenant>.my.centrify.net
+#. Launch Google Chrome and browse to your unique Identity Platform URL **\https://<tenant>.my.centrify.net**
 #. Login to your unique Identity Platform with the following credentials:
 
    - **Username:** admin
@@ -178,7 +178,7 @@ Centrify Connectors are deployed in the environment to facilitate specific acces
 #. At the Welcome Message, click **Next**
 #. Maintain strong encryption options and click **Next**
 #. Greensafe is not using a proxy server and no changes are needed. Click **Next**
-#. Change the Tenant URL with your unique platform URL. \https://<tenant>.my.centrify.net (You can copy and paste the URL directly from the address bar of the browser.) Leave all other options *default*!!!
+#. Change the Tenant URL with your unique platform URL. **\https://<tenant>.my.centrify.net** (You can copy and paste the URL directly from the address bar of the browser.) Leave all other options *default*!!!
 
    .. figure:: images/lab-011.png
 
@@ -285,7 +285,7 @@ Below is an image shows how the profile should look like:
 Configure MFA Setting for contractor user
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-1. Launch google chrome in incognito mode and navigate to your unique CIP URL **https://<tenantID>.my.centrify.net**
+1. Launch google chrome in incognito mode and navigate to your unique CIP URL **\https://<tenantID>.my.centrify.net**
 2. Login to CIP using the following:
 
    Username: **zcontractor@labguide** 
