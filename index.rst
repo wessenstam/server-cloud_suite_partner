@@ -6,7 +6,7 @@
   :name: _Server_Suite
   :hidden:
 
-  Server_Suite/lab1
+  Server_Suite/lab1/lab1
   
 .. toctree::
   :maxdepth: 2
@@ -14,7 +14,7 @@
   :name: _Cloud_Suite
   :hidden:
 
-  Cloud_Suite/lab1
+  Cloud_Suite/lab1/lab1
   
 .. _getting_started_index:
 
@@ -23,8 +23,6 @@ Welcome!!!
 ----------
 
 Welcome to Delinea's Partner training on Server and Cloud suite!!!
-
-
 
 
 Skytap
