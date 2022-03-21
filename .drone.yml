@@ -17,7 +17,7 @@ steps:
   
   when:
     branch:
-    - master
+    - main
   
 - name: Build Dev HTML(dev)
   commands:

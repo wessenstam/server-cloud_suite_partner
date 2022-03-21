@@ -24,15 +24,20 @@ Welcome!!!
 
 Welcome to Delinea's Partner training on Server and Cloud suite!!!
 
+
+
+
+Skytap
+++++++
+
 This workshop runs from a Skytap environment in the EMEA region. To present you with a basic set of how to use the environment, please read this small guide..
 
 A graphical representation of your environment is shown below:
 
 .. figure:: images/lab000.png
 
-
-Skytap
-++++++
+Access to your environment
+**************************
 
 You should have received an email that you have been invited to an online training session.
 
@@ -40,13 +45,22 @@ You should have received an email that you have been invited to an online traini
 
 Click the link as you see it mentioning in the email. You may be asked to provided an extra password to login to your ask your training for that password.... Welcome to the world of security :)
 
+Starting your environment
+*************************
+
 Once in your environment you will ss in the top right corner a "play" menu. Is your environment has not started, click the "Play" button. It will take approx 5-10 minutes for the environment is running.
 
 .. figure:: images/lab002.png
 
+Check your environment
+**********************
+
 After all VMs have started, the screenshot is an example, click on the VM that is mentioned in the lab. This will open the VM in a new browser tab so you can interact with the VM. Another option is to use the RDP link. This will download an RDP file that you can open in your RDP application like MS Terminal Services. This also works for Linux based machine. 
 
 .. figure:: images/lab003.png
+
+Working with your environment
+*****************************
 
 Once you have the VM open in a Browser window, you will get the Skytap Toolbar (click the arrow if you don’t see it or want to hide it). 
 
@@ -63,8 +77,14 @@ From left to right:
 8. Different screensizes icon; resize the screen to presetted sizes
 9. The “Wifi” icon; connection strength
 
+Support to your environment
+***************************
 
+Your instructor can help you "remotely". He/she is able to connect to your environment and discuss together where the issue is. When he/she connects to your environment the mouse movements are seen on your screen. Don't be scared it is not a virus, it's your instructor!!!
 
+.. raw:: html
+  
+  <HR>
+  <center><H1 style="color:#00FF59">HAVE FUN!!!!</H1></center>
 
-HAVE FUN!!!!
 ------------
