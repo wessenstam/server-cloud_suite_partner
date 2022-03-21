@@ -22,6 +22,10 @@
   :hidden:
 
   Cloud_Suite/lab1/lab1
+  Cloud_Suite/lab2/lab2
+  Cloud_Suite/lab3/lab3
+  Cloud_Suite/lab4/lab4
+  Cloud_Suite/lab5/lab5
   
 .. _getting_started_index:
 
