@@ -18,9 +18,9 @@
   
 .. _getting_started_index:
 
----------------
-Getting Started
----------------
+----------
+Welcome!!!
+----------
 
 Welcome to Delinea's Partner training on Server and Cloud suite!!!
 
