@@ -50,16 +50,16 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = u'Container 101'
-copyright = u'2022 ThycoticCentrify'
-author = u'ThycoticCentrify Enablement'
+project = u'Server + Cloud Suite Partner training'
+copyright = u'2022 Delinea'
+author = u'Delinea Enablement'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
 # built documents.
 #
 # The short X.Y version.
-version = u'3.0'
+version = u'1.0'
 # The full version, including alpha/beta/rc tags.
 release = u''
 
@@ -94,9 +94,9 @@ html_theme_path = sphinx_bootstrap_theme.get_html_theme_path()
 # (Optional) Logo. Should be small enough to fit the navbar (ideally 24x24).
 # Path should be relative to the ``_static`` files directory.
 
-html_logo = "NutanixWorkshops.svg"
+html_logo = "_static/Delinea.svg"
 
-html_favicon = "favicon.ico"
+html_favicon = "_static/favicon.ico"
 
 html_title = ""
 
