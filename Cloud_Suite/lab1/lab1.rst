@@ -280,7 +280,7 @@ Create MFA Profiles
 
 Below is an image shows how the profile should look like:
 
-.. figure:: images/lab-23.png
+.. figure:: images/lab-023.png
 
 Configure MFA Setting for contractor user
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
