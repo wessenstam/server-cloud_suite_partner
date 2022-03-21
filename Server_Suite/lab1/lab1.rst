@@ -115,5 +115,5 @@ In this exercise, Alex (you) will complete the initial configuration of the solu
 .. raw:: html
 
     <hr><CENTER>
-    <H2 style="color:#80BB01">This concludes this lab</font>
+    <H2 style="color:#00FF59">This concludes this lab</font>
     </CENTER>
