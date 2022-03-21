@@ -392,11 +392,11 @@ You will create a new policy specific for contractors, the policy will include m
     .. figure:: images/lab-042.png
 
     .. figure:: images/lab-043.png
-        
+
     .. figure:: images/lab-044.png
 
 .. raw:: html
 
     <hr><CENTER>
-    <H2 style="color:#80BB01">This concludes this lab</font>
+    <H2 style="color:#00FF59">This concludes this lab</font>
     </CENTER>
