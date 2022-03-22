@@ -262,3 +262,9 @@ Test Privilege Elevation
 
 9. Now you should have access to **sshd_config** file.
 10. Repeat **steps 5-9** to test *restarting the sshd service*.
+
+.. raw:: html
+
+    <hr><CENTER>
+    <H2 style="color:#00FF59">This concludes this lab</font>
+    </CENTER>
