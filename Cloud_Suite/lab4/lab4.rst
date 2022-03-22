@@ -1,8 +1,8 @@
 .. _cl4:
 
---------------------
-Apply MFA Everywhere
---------------------
+----------------------
+Extras for Cloud Suite
+----------------------
 
 Introduction
 ------------
@@ -26,6 +26,9 @@ Systems used in this lab:
 
 ------
 
+Apply MFA Everywhere
+********************
+
 Cloud Suite / CIP portal provides MFA requirements on the following:
 1. Portal login
 2. Portal Based Remote Login
@@ -34,7 +37,7 @@ Cloud Suite / CIP portal provides MFA requirements on the following:
 In the previous labs, you have configured MFA at Portal login & MFA at Cloud Client Privilege Elevation. In this lab you will configure the rest of MFA available options.
 
 Portal Based Remote Login
-*************************
+^^^^^^^^^^^^^^^^^^^^^^^^^
 
 1. While logged in The Portal using Admin credentials, navigate to **Resources > Systems**
 2. Click on the Linux system (**rhel7sx64**)
