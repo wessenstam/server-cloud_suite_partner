@@ -1,4 +1,4 @@
-.. _l2:
+.. _cl2:
 
 --------------------
 Install Cloud Client

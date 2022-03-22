@@ -1,4 +1,4 @@
-.. _l1:
+.. _cl1:
 
 -----------------------------------------------
 Prepare Centrify Identity Platform / The Portal
