@@ -165,76 +165,114 @@ Agent Authentication Login
 Windows Server
 ^^^^^^^^^^^^^^
 
-1. While in CIP Portal, navigate to Resources > Systems
+1. While in CIP Portal, navigate to **Resources > Systems**
 
-2. In the system list, Click on the windows server object name (wins2019s)
-3. Click on Permissions.
-4. Click Add
-5. Type (Contractor Role) in the search box, check the box next to it once it appears.
-6. Click Add
-Note: The search is case sensitive.
-Cloud Suite
-35
-7. In the Permissions list, Check Agent Auth for the Contractor Role
-Note: Agent Auth allows the Contractor Role member users to authenticate to the servers leveraging the client installed on it as themselves using a feature (Use My Account)
-8. Switch to Chrome Incognito Windows and login to CIP Portal as:
-• Username: zcontractor@labguide
-• Password: Provided by trainer
-9. Navigate to Resources > Systems
-10. Right Click on Windows Server object (wins2019s).
-11. Click Use My Account
-Cloud Suite
-36
-12. After a successful automatic login to the system, open start > computer management
-13. Click on Local User and Groups > Users
-14. Note that the users list now contains (zcontractor) as a local user. This user was auto created by the client upon (Use My Account) step.
+   .. figure:: images/lab-015.png
+
+2. In the system list, Click on the windows server object name (**wins2019s**)
+3. Click on **Permissions**.
+4. Click **Add**
+
+   .. figure:: images/lab-016.png   
+
+5. Type (**Contractor Role**) in the search box, **check the box** next to it once it appears.
+6. Click **Add**
+
+   .. note:: 
+       The search is case sensitive.
+
+   .. figure:: images/lab-017.png   
+
+7. In the **Permissions** list, Check **Agent Auth** for the **Contractor Role**
+
+   .. figure:: images/lab-018.png   
+
+   .. Note:: 
+       Agent Auth allows the **Contractor Role** member **users** to authenticate to the servers leveraging the client installed on it as themselves using a feature (**Use My Account**)
+
+8. Switch to **Chrome Incognito** Windows and login to CIP Portal as:
+
+   • **Username:** zcontractor@labguide
+   • **Password:** Provided by trainer
+
+9. Navigate to **Resources > Systems**
+10. Right Click on Windows Server object (**wins2019s**).
+11. Click Use **My Account**
+
+    .. figure:: images/lab-019.png
+
+12. After a successful automatic login to the system, open **start > computer management**
+
+    .. figure:: images/lab-020.png
+
+13. Click on **Local User and Groups > Users**
+14. Note that the users list now contains (**zcontractor**) as a local user. This user was **auto created** by the client upon (Use My Account) step.
 15. Double click on the user to open properties, click Member Of tab.
-Note that zcontractor was added to two groups, Remote Desktop Users & Users. This means this
-Cloud Suite
-37
-is a standard user with no administrative rights on the windows server.
-16. Sign out of the windows server session.
-17. Switch back to Normal Chrome session with admin login to CIP Portal.
-18. Navigate to Resources > Systems
-19. Click on the Windows server object (wins2019s)
-20. Click on Local Group Mapping
-21. Click Add button
-22. click Select button
-Cloud Suite
-38
-23. Check System Administrator
-24. click Select
-25. Under Local Groups click the Add button
-26. Type Administrators
-27. Click Add
-28. Click Ok
-29. Click Permissions
-Cloud Suite
-39
-30. Check Agent Auth for System Administrator Role.
-31. Click on Actions and Select Use My Account
-32. You will be auto logged in to the server with CIP Portal Admin Account. Note that this account membership on the server is different. This account must be member of Local Administrators group.
-Cloud Suite
-40
+
+    .. Note:: 
+        The **zcontractor** was added to two groups, Remote Desktop Users & Users. This means this is a standard user with no administrative rights on the windows server.
+
+    .. figure:: images/lab-021.png
+
+16. **Sign out** of the windows server session.
+17. Switch back to **Normal Chrome** session with **admin** login to **CIP Portal**.
+18. Navigate to **Resources > Systems**
+19. Click on the Windows server object (**wins2019s**)
+20. Click on **Local Group Mapping**
+21. Click **Add** button
+
+    .. figure:: images/lab-022.png
+
+22. click **Select** button
+23. Check **System Administrator**
+24. click **Select**
+25. Under **Local Groups** click the **Add** button
+26. Type **Administrators**
+27. Click **Add**
+
+    .. figure:: images/lab-022.png
+
+28. Click **Ok**
+29. Click **Permissions**
+
+    .. figure:: images/lab-023.png
+
+30. Check **Agent Auth** for **System Administrator** Role.
+31. Click on *Actions* and Select **Use My Account**
+
+    .. figure:: images/lab-024.png
+
+32. You will be auto logged in to the server with CIP Portal Admin Account. Note that this account membership on the server is different. This account must be member of **Local Administrators** group.
+
+    .. figure:: images/lab-025.png
+
 Linux Server
-1. While in The Portal logged in as Admin user, navigate to Resources > Systems
-2. Click on the Linux system object (rhel7sx64).
-3. Click Settings, scroll down and check (Use My Account is configured on this system)
-Cloud Suite
-41
-4. Click on Permissions > Add
-5. Search for (Contractor Role)
-6. Check the box, click Add
-7. Check Agent Auth box for Contractor Role
-8. Save
-9. Switch to Chrome Incognito session, Refresh the page or login using zcontractor again if session
-Cloud Suite
-42
-was logged out.
-10. Navigate to Resources > Systems.
-11. Right click on linux system (rhel7sx64)
-12. Click on Use My Account
-13. You will be auto logged in using zcontractor account. Home Directory auto created.
+^^^^^^^^^^^^
+
+1. While in **The Portal** logged in as **Admin** user, navigate to **Resources > Systems**
+2. Click on the Linux system object (*rhel7sx64*).
+3. Click *Settings*, scroll down and *check (Use My Account is configured on this system)*
+
+   .. figure:: images/lab-026.png
+
+4. Click on **Permissions > Add**
+5. Search for (**Contractor Role**)
+
+   .. figure:: images/lab-027.png
+
+6. Check the box, click **Add**
+7. Check **Agent Auth** box for **Contractor Role**
+8. **Save**
+9. Switch to **Chrome Incognito** session, Refresh the page or login using **zcontractor** again if session was logged out.
+10. Navigate to **Resources > Systems**.
+11. Right click on linux system (**rhel7sx64**)
+12. Click on **Use My Account**
+
+    .. figure:: images/lab-028.png
+
+13. You will be auto logged in using **zcontractor** account. Home Directory auto created.
+
+    .. figure:: images/lab-029.png
 
 .. raw:: html
 
