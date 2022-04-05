@@ -1,4 +1,4 @@
-.. title:: Server and Cloud Suite Partner training
+.. title:: Delinea - Server and Cloud Suite Partner training
 
 .. toctree::
   :maxdepth: 2
