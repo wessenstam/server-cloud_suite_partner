@@ -76,6 +76,7 @@ Once you have the VM open in a Browser window, you will get the Skytap Toolbar (
 .. figure:: images/lab004.png
 
 From left to right:
+
 1. The two screens icon; clicking this icon provides the possibility to switch consoles between VMs
 2. The “pause”/ “stop” / “power” button; Resp. suspend, stop and poweroff/on the current VM
 3. Ctrl-Alt-Del button; send the Ctrl-Alt-Del command to the VM
