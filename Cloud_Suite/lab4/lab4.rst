@@ -87,13 +87,13 @@ Host Based System Login – Cloud Client
 
 8. To login to the server, use the following credentials:
 
-   a. **Username:** zcontractor@labguide
+   a. **Username:** zcontractor@lab.<tenant>
    b. **Password:** Provided by the trainer
 9. You will be prompted to choose one of the available MFA options, **type the number** that corresponds the MFA mechanism you prefer to choose and hit **Enter**
 
    .. figure:: images/lab-009.png
 
-10. Repeat **Steps 7-9** to test MFA at **Windows** Server Console login (**Cloud-win-server**), using same *zcontractor@labguide*
+10. Repeat **Steps 7-9** to test MFA at **Windows** Server Console login (**Cloud-win-server**), using same *zcontractor@lab.<tenant>*
 
     .. figure:: images/lab-010.png
 
