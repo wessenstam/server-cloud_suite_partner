@@ -30,17 +30,19 @@ Apply MFA Everywhere
 ********************
 
 Cloud Suite / CIP portal provides MFA requirements on the following:
+
 1. Portal login
 2. Portal Based Remote Login
 3. Privilege Elevation for both Cloud Client & Server Suite agent
 4. Host-based system login for both Cloud Client & Server Suite Agent
+
 In the previous labs, you have configured MFA at Portal login & MFA at Cloud Client Privilege Elevation. In this lab you will configure the rest of MFA available options.
 
 Portal Based Remote Login
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 
-1. While logged in The Portal using Admin credentials, navigate to **Resources > Systems**
-2. Click on the Linux system (**rhel7sx64**)
+1. While logged in The Portal using admin credentials, navigate to **Resources > Systems**
+2. Click on the Linux system **rhel7sx64**
 3. Click on **Policy**
 
    .. figure:: images/lab-001.png
@@ -49,10 +51,10 @@ Portal Based Remote Login
 
    .. figure:: images/lab-002.png
 
-5. **Save**
+5. Click **Save**
 6. Switch to **Chrome Incognito** session and login as **zcontractor@labguide** user
 7. From main menu on the left, navigate to **Resources > Systems**
-8. Right click the Linux system (**rhel7sx64**) and click **Use My Account**
+8. Right click the Linux system **rhel7sx64** and click **Use My Account**
 
    .. figure:: images/lab-003.png
 
@@ -69,7 +71,7 @@ Portal Based Remote Login
 Host Based System Login – Cloud Client
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-1. While in The Portal logged in as Admin, in the main menu on the left navigate to **Access > Policies**
+1. While in portal, logged in as Admin, in the main menu on the left navigate to **Access > Policies**
 
    .. figure:: images/lab-006.png
 
@@ -77,7 +79,7 @@ Host Based System Login – Cloud Client
 3. Expand **Authentication > Centrify Clients > Login**
 4. Select **Yes** from dropdown list next to **Enable authentication policy controls**
 5. Select **Contractor MFA Profile** from dropdown list under **Default Profile (used if no conditions matched)**
-6. **Save**
+6. Click **Save**
 
    .. figure:: images/lab-007.png
 
@@ -87,13 +89,13 @@ Host Based System Login – Cloud Client
 
 8. To login to the server, use the following credentials:
 
-   a. **Username:** zcontractor@lab.<tenant>
+   a. **Username:** zcontractor@labguide
    b. **Password:** Provided by the trainer
 9. You will be prompted to choose one of the available MFA options, **type the number** that corresponds the MFA mechanism you prefer to choose and hit **Enter**
 
    .. figure:: images/lab-009.png
 
-10. Repeat **Steps 7-9** to test MFA at **Windows** Server Console login (**Cloud-win-server**), using same *zcontractor@lab.<tenant>*
+10. Repeat **Steps 7-9** to test MFA at **Windows** Server Console login (**Cloud-win-server**), using same *zcontractor@labguide*
 
     .. figure:: images/lab-010.png
 
@@ -101,6 +103,9 @@ Unenroll & Re-enrol Cloud Client
 ********************************
 
 In a previous chapter, we have used the Wizard to enrol Windows Server with The Portal. In some cases, you may need to unenroll the client and re-enrol it. In this lab we will un-enroll and re-enrol Cloud Client using command line interface.
+
+Unenroll the Windows server
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 1. From Skytap portal, open (cloud-win-server) console and login using the following credentials:
    
@@ -129,7 +134,7 @@ In a previous chapter, we have used the Wizard to enrol Windows Server with The 
 
 6. Open The Portal and refresh, navigate to **Resources > Systems**. The system no longer exists.
 
-Re-enrol the windows server:
+Re-enrol the Windows server:
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 7. While in CMD session on the windows server, type the following command:
