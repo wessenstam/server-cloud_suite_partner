@@ -26,7 +26,7 @@ Systems used in this lab:
 
 ------
 
-Centrify Server Suite Group Policies (GPO)
+Delinea Server Suite Group Policies (GPO)
 ******************************************
 
 Create a GPO
@@ -41,7 +41,7 @@ Create a GPO
 #. *Name* the new GPO **Centrify GPO** and click **OK**
 #. Right-click the *Centrify GPO* and click **Edit**
 #. Expand *Computer Configuration > Policies*
-#. Right-click *Centrify Settings* and click **Add/Remove Templates**
+#. Right-click *Delinea Settings* and click **Add/Remove Templates**
 #. Click **Add**
 #. Select all Centrify Templates in the window that opens and click **Open**
 #. Click **OK**
