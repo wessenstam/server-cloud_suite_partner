@@ -153,7 +153,7 @@ Install & Enroll Cloud Client on Linux Server
 
    .. figure:: images/lab-014.png
 
-9. **Write and quit** by clicking *Escape* button on keyboard > type **wq!** > hit **Enter**
+9. **Write and quit** by clicking *Escape* button on keyboard > type **:wq!** > hit **Enter**
 
 .. Note:: 
     To verify a successful enrolment, **cloud-nix-server** must be added automatically and available in systems list in **The Portal**. Reopen Chrome, in CIP and navigate to **Resources > System**. You should see the Linux server listed.
@@ -175,7 +175,7 @@ Windows Server
 
    .. figure:: images/lab-016.png   
 
-5. Type (**Contractor Role**) in the search box, **check the box** next to it once it appears.
+5. Type **Contractor Role** in the search box, **check the box** next to it once it appears.
 6. Click **Add**
 
    .. note:: 
@@ -190,23 +190,23 @@ Windows Server
    .. Note:: 
        Agent Auth allows the **Contractor Role** member **users** to authenticate to the servers leveraging the client installed on it as themselves using a feature (**Use My Account**)
 
-8. Switch to **Chrome Incognito** Windows and login to CIP Portal as:
+8. Switch to **Chrome Incognito** Window and login to CIP Portal as:
 
    • **Username:** zcontractor@labguide
    • **Password:** Provided by trainer
 
 9. Navigate to **Resources > Systems**
-10. Right Click on Windows Server object (**wins2019s**).
+10. Right Click on Windows Server object **wins2019s**.
 11. Click Use **My Account**
 
     .. figure:: images/lab-019.png
 
-12. After a successful automatic login to the system, open **start > computer management**
+12. After a successful automatic login to the system, open **Start > Computer Management**
 
     .. figure:: images/lab-020.png
 
 13. Click on **Local User and Groups > Users**
-14. Note that the users list now contains (**zcontractor**) as a local user. This user was **auto created** by the client upon (Use My Account) step.
+14. Note that the users list now contains **zcontractor** as a local user. This user was **auto created** by the client upon *Use My Account* step.
 15. Double click on the user to open properties, click Member Of tab.
 
     .. Note:: 
@@ -217,7 +217,7 @@ Windows Server
 16. **Sign out** of the windows server session.
 17. Switch back to **Normal Chrome** session with **admin** login to **CIP Portal**.
 18. Navigate to **Resources > Systems**
-19. Click on the Windows server object (**wins2019s**)
+19. Click on the Windows server object **wins2019s**
 20. Click on **Local Group Mapping**
 21. Click **Add** button
 
@@ -230,21 +230,21 @@ Windows Server
 26. Type **Administrators**
 27. Click **Add**
 
-    .. figure:: images/lab-022.png
+    .. figure:: images/lab-023.png
 
 28. Click **Ok**
 29. Click **Permissions**
 
-    .. figure:: images/lab-023.png
+    .. figure:: images/lab-024.png
 
 30. Check **Agent Auth** for **System Administrator** Role.
 31. Click on *Actions* and Select **Use My Account**
 
-    .. figure:: images/lab-024.png
+    .. figure:: images/lab-025.png
 
 32. You will be auto logged in to the server with CIP Portal Admin Account. Note that this account membership on the server is different. This account must be member of **Local Administrators** group.
 
-    .. figure:: images/lab-025.png
+    .. figure:: images/lab-026.png
 
 Linux Server
 ^^^^^^^^^^^^
@@ -253,12 +253,12 @@ Linux Server
 2. Click on the Linux system object (*rhel7sx64*).
 3. Click *Settings*, scroll down and *check (Use My Account is configured on this system)*
 
-   .. figure:: images/lab-026.png
+   .. figure:: images/lab-027.png
 
 4. Click on **Permissions > Add**
 5. Search for (**Contractor Role**)
 
-   .. figure:: images/lab-027.png
+   .. figure:: images/lab-028.png
 
 6. Check the box, click **Add**
 7. Check **Agent Auth** box for **Contractor Role**
@@ -268,11 +268,11 @@ Linux Server
 11. Right click on linux system (**rhel7sx64**)
 12. Click on **Use My Account**
 
-    .. figure:: images/lab-028.png
+    .. figure:: images/lab-029.png
 
 13. You will be auto logged in using **zcontractor** account. Home Directory auto created.
 
-    .. figure:: images/lab-029.png
+    .. figure:: images/lab-030.png
 
 .. raw:: html
 
