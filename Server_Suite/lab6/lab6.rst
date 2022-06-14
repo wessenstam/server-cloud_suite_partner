@@ -37,7 +37,7 @@ Creation
 
 #. Using Access Manager, expand the *UNIX Zone*
 #. Expand *Authorization*, right-click on **Role Assignments** and select **Assign Role...**
-#. Locate and select the **UNIX Login** for the *greeensafe.lab/Centrify/GLobal Zone/UNIX Zone*. Widen the *Zone* column to select the correct Zone
+#. Locate and select the **UNIX Login** for the *greeensafe.lab/Centrify/Global Zone/UNIX Zone*. Widen the *Zone* column to select the correct Zone
 
    .. figure:: images/lab-001.png
 
@@ -154,20 +154,20 @@ Creating a custom application right
 #. Name the *New Application* **Windows Firewall Management**
 #. Click the *Match Criteria* Tab
 #. Click **Add**
-#. Click **Import Process...** on the bottom of the window
-#. Under the *Import From Running Process*, select the **mmc.exe** *Image name* that relates to the command line for the Windows Firewall "C:\\Windows\\system32\\mmc.exe" "C:\\Windows\\system32\\WF.msc"
+#. Check **Path**
+#. In **Name** filed type: **mmc.exe**
+#.	*Check Arguments* and type ("C:\\Windows\\system32\\WF.msc")
+#.	**Select** *Specific Path* and type: (C:\\Windows\\system32\\)
+#.	Change the Description to **Windows Firewall** and Click **OK**
 
-   .. figure:: images/lab-007.png
-
-#. Click **OK**
-#. Change the Description to **Windows Firewall** and Click **OK**
-
-   .. figure:: images/lab-008.png
+   .. figure:: images/lab-007.jpg
 
 #. Click the **Run As** tab.
 #. Click **Add AD Groups**
 #. Search for and select **Domain Admins** and click **OK**
 #. Click **OK** to Save the New Windows Application Right.
+
+   .. figure:: images/lab-008.png
 
 Create role and assign the Right
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -179,9 +179,14 @@ Create role and assign the Right
 #. Name the *New Role* **Firewall Management**
 #. Click **OK**
 #. Right-click the **Firewall Management** Role and select **Add Right**
-#. Locate and Select **Windows Firewall Management**
-#. Click **OK**
 
+   .. figure:: images/lab-010a.png
+
+#. Locate and Select **Windows Firewall Management**
+
+   .. figure:: images/lab-010b.png
+
+#. Click **OK**
 
 Assign Windows Login
 ^^^^^^^^^^^^^^^^^^^^
@@ -233,7 +238,7 @@ Test the Windows roles
 
 #. We have already established that since Alex Foster is a domain admin, he has privilege to login and access the firewall
 #. *Logout of db-server*
-#. Log in as each of the users listed below to confirm the roles you have assigned, and open Windows Exporer and navigate to **C:\\Windows\\System32** and right-click WF > 
+#. Log in as each of the users listed below to confirm the roles you have assigned, and open Windows Exporer and navigate to **C:\\Windows\\System32** and right-click **WF**
    
    .. list-table::
       :widths: 15 15 25 25 20
@@ -277,7 +282,7 @@ Test the Windows roles
 
        To run the application with privilege, right-click on the application and select **Run With Privilege**
 
-        .. figure:: images/lab-017.png
+       .. figure:: images/lab-017.png
 
        If the user has been granted privilege via the *assigned role*, they should see the Windows Firewall options shown below
 
@@ -294,7 +299,7 @@ The current zone structure has systems grouped by operating system, but not all 
 Pre-create New Systems
 ^^^^^^^^^^^^^^^^^^^^^^
 
-#. Using Centrify Access Manager, expand *Child Zones*
+#. Using Delinea Access Manager, expand *Child Zones*
 #. Expand *Unix Zone*
 #. Right-click *Computers* and select **Prepare UNIX Computer**
 #. Under *Prepare Computer*, maintain the default settings and click **Next**
@@ -390,9 +395,6 @@ Add the Rights to the Roles
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 #. Right-click on the *UNIX Admin* Role in the *Role Definitions* sections and select **Add Right**
-
-   .. figure:: images/lab-023.png
-
 #. Select the **ALL** command right created earlier
 #. Click **OK**
 #. Right-click on the *UNIX Service Manager* Role and select **Add Right**
@@ -460,6 +462,10 @@ Check Effective Rights and Test Roles
 
 #. Right-click on the CHild Zone *UNIX Zone* and select **Effective Unix User Rights** to check the configuration (Use the *Role Assigment* and the *Commands* tabs to see the information):
 
+   .. figure:: images/lab-028.png
+
+   .. figure:: images/lab-029.png
+
    .. list-table::
       :widths: 10 20 10 30 30 
       :header-rows: 1
@@ -495,11 +501,7 @@ Check Effective Rights and Test Roles
         - No
         - No
 
-   .. figure:: images/lab-029.png
-
-   .. figure:: images/lab-028.png
-
-#. Close *Effective Unix User Rights**
+#. Close *Effective Unix User Rights*
 
 Test the configured roles
 ^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -557,7 +559,7 @@ Test the configured roles
 #. This demonstrates how the role permits just enough privilege to restart services, but not run other elevated commands
 
    .. note::
-       The command **dzdo** is the Centrify \`sudo\` implementation with extra options. If the user lbennet tries to use **sudo**, there is an error that the user is not in the sudoers files and therefore can NOT run any privileged commands. Try **sudo systemctl restart sshd** and you will see the sudoers error
+       The command **dzdo** is the Delinea \`sudo\` implementation with extra options. If the user *lbennet* tries to use **sudo**, there is an error that the user is not in the sudoers files and therefore can NOT run any privileged commands. Try **sudo systemctl restart sshd** and you will see the sudoers error
    
        .. figure:: images/lab-031.png
    
