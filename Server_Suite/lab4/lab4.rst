@@ -54,7 +54,7 @@ Add domain user and groups for the ZPA
 7. Click **Finish**
 
    .. note::
-       Make sure that the account has not been disabled after the creation. In some cases this happens. You can see thatthe account has been disabled if there is a downwards pointing arrow next to the account. To enable the account, right-click th account and select **Enable Account**. Not having the account Enabled will lead to issues later in the lab.
+       Make sure that the account has not been disabled after the creation. In some cases this happens. You can see that the account has been disabled if there is a downwards pointing arrow next to the account. To enable the account, right-click th account and select **Enable Account**. Not having the account Enabled will lead to issues later in the lab.
 
        .. figure:: images/lab-006.png       
 
@@ -143,10 +143,10 @@ Assigning the provisioning to the zone
 
    .. figure:: images/lab-009a.png
 
-#. Click the :fa:`search` button
+#. Click the :fa:`search` (magnifing glass) button
 #. Find and select **cfyP_Global_Users** and Click **OK**
 #. Under the *Provisioning* tab, *Enable auto-provisioning of Group Profiles*
-#. Click the :fa:`search` button
+#. Click the :fa:`search` (magnifing glass) button
 #. Find and select **cfyP_Global_Groups**
 #. Click **OK**
 #. Click **OK** to save the changes
@@ -191,7 +191,7 @@ Test the auto provisioning
 
    .. code-block:: bash
    
-      zoneupdate “Global Zone”
+      zoneupdate "Global Zone"
 
 
 

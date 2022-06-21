@@ -65,7 +65,7 @@ Test the set GPO on Unix
    - **Password:** *Provided by Trainer*
 
 #. Execute **adgpupdate** to update group policies on the system
-#. Logout of db-unix 
+#. Logout of db-unix and **repeat these 2 steps (1 and 2)** for the *apps-unix* server
 #. Log back in using the following credentials:
    
    - **Username:** badams@greensafe.lab

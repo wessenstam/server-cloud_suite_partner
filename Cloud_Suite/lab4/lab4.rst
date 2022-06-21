@@ -83,21 +83,23 @@ Host Based System Login – Cloud Client
 
    .. figure:: images/lab-007.png
 
-7. In **Skytap** portal , click on the **server name** to launch console access (**cloud-RHEL-server**)
+7. In **Skytap** portal , click on the **server name** to launch console access **cloud-RHEL-server**
 
    .. figure:: images/lab-008.png
 
 8. To login to the server, use the following credentials:
 
-   a. **Username:** zcontractor@labguide
+   a. **Username:** zcontractor@labguide-0808
    b. **Password:** Provided by the trainer
 9. You will be prompted to choose one of the available MFA options, **type the number** that corresponds the MFA mechanism you prefer to choose and hit **Enter**
 
    .. figure:: images/lab-009.png
 
-10. Repeat **Steps 7-9** to test MFA at **Windows** Server Console login (**Cloud-win-server**), using same *zcontractor@labguide*
+10. Repeat **Steps 7-9** to test MFA at **Windows** Server Console login **cloud-win-server**, using same *zcontractor@labguide-0808*
 
     .. figure:: images/lab-010.png
+
+11. Sign out of the **cloud-win-server**
 
 Unenroll & Re-enrol Cloud Client
 ********************************
@@ -109,10 +111,10 @@ Unenroll the Windows server
 
 1. From Skytap portal, open (cloud-win-server) console and login using the following credentials:
    
-   a. **Username:** Administrator
+   a. **Username:** .\Administrator
    b. **Password:** Provided by the trainer.
 
-2. From **start menu**, launch **CMD** as **administrator**.
+2. From **Start Menu**, launch **CMD** as **Administrator**.
 3. Navigate to cagent folder using the following path
 
    .. code-block:: powershell
@@ -166,6 +168,10 @@ Review Portal Based – Gateway Audits
 
    .. figure:: images/lab-015.png
 
+   .. note::
+
+      Your environment may look from IP addresses perspective a bit different
+
 4. **Close** Audit Manager
 5. To replay Recorded sessions, Launch **Audit Analyzer** by click on the icon available on the Desktop
 
@@ -175,6 +181,8 @@ Review Portal Based – Gateway Audits
 7. Choose Today filter
 
    .. figure:: images/lab-017.png
+
+8. The list of audited sessions are showing the zcontractor that has connected using the CIP and the Cloud Connector that has been installed earlier in the lab
 
    .. figure:: images/lab-018.png
 

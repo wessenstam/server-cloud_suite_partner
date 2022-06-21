@@ -35,7 +35,7 @@ As we have examined, privileged directory service users must have roles assigned
 Creation
 ^^^^^^^^
 
-#. Using Access Manager, expand the *UNIX Zone*
+#. Using Access Manager on **apps-server**, expand the *UNIX Zone*
 #. Expand *Authorization*, right-click on **Role Assignments** and select **Assign Role...**
 #. Locate and select the **UNIX Login** for the *greeensafe.lab/Centrify/Global Zone/UNIX Zone*. Widen the *Zone* column to select the correct Zone
 
@@ -76,7 +76,7 @@ Creation
       * - kim
         - Team_Finance & Team_UNIXAdmins
         - Yes
-      * - snguyen
+      * - snguyen (Sam)
         - Domain Users
         - No
       * - ahouston
@@ -141,7 +141,7 @@ Windows Roles are slightly different as privilege will come in the form of the u
 Creating a custom application right
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-#. On the apps-server open *Start Menu* and navigate and open *Windows Administrative Tools*
+#. On the **apps-server** open *Start Menu* and navigate and open *Windows Administrative Tools*
 #. Launch *Windows Firewall and Advanced Security* 
 #. Minimize the Firewall Window to leave it running. We will be using this later in the exercise
 #. Using *Access Manager*, expand the *Windows Zone*
@@ -495,8 +495,8 @@ Check Effective Rights and Test Roles
         - db2-unix
         - Yes
         - Yes
-      * - ahouston
-        - Team_Auditors
+      * - ahouston (not shown)
+        - Team_Auditors (has not been assigned any role)
         - db2-unix
         - No
         - No
@@ -547,6 +547,10 @@ Test the configured roles
         - db-unix
         - No
         - No
+
+   .. note::
+
+       To check the commands that have been allowed by the configuration, as the user, run ``dzinfo`` to see the commands that the user has access to. The defined command(s) should be mentioned. If this is not the case log in to the *db-unix* as **root** and run ``dzflush``
 
 #. Logged in as lbennett, execute the following command:
 

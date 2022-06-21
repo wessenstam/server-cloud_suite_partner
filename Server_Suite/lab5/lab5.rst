@@ -99,7 +99,7 @@ Join a Windows machine to the correct Zone
        If you get an message that the system needs to be reboot after the install or services need to be restarted, click **OK**
 
 #. When the installation is complete, click **Finish**
-#. The Agent Configuration Wizard will automatically run
+#. Open the **Agent Configuration** using the *Start Menu > Recently added*
 #. Click **Add Service**
 #. Click **Privilege Elevation Service**
 
@@ -110,13 +110,13 @@ Join a Windows machine to the correct Zone
 
    .. figure:: images/lab-004.png
 
-#. When prompted, select **Yes** to create a Windows Login Role for the Domain Admins group so they can continue to login to the system
+#. When prompted, select **Yes** to create a Windows Login Role for the Domain Admins group so they can continue to login to the system and click **Ok**
     
    .. note::
        If/ When prompted about multifactor authentication enrollment, click Yes to skip the enrollment and continue the configuration
 
 #. When prompted to restart the system, click **Yes**
-#. Login with the users listed below on the machines being mentioned and confirm the ability to login according to the below table
+#. Login with the user afoster listed below on the machines being mentioned and confirm the ability to login according to the below table
 
    .. list-table::
       :widths: 15 15 15 55
@@ -139,6 +139,9 @@ Join a Windows machine to the correct Zone
         - db-server
         - **No** (badams is not assigned a Role)
      
+   .. note::
+      Use PuTTY on the **apps-server** to log into the db-unix server. For the other two options, login using the console.
+
 .. raw:: html
 
     <hr><CENTER>

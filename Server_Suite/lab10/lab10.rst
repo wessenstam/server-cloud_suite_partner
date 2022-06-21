@@ -178,7 +178,7 @@ In this exercise, Alex (you) will then review the sessions, create specific quer
 
 #. Add notes related to the session:"witnessed.." and click **OK**. You can then *close* this session
 #. Now let’s look at a UNIX session. Double click on the session for **db-unix.greensafe.lab**
-#. Let’s document this session so other auditors and management have the auditor’s notes. UClick *Session > Update Review Status* and select **Pending for action**
+#. Let’s document this session so other auditors and management have the auditor’s notes. Click *Session > Update Review Status* and select **Pending for action**
 #. Add notes and instructions of the actions that need to be taken and click **OK**. For example: "Security permissions need to be reviewed for this logged in user". You can now *close* this session
 #. Let’s now group sessions based on specific executed commands. Right-click on **Audit Sessions** and select **New Private Query**
 
@@ -206,7 +206,7 @@ Configure Centrify Reporting Service
 
 In this exercise, Alex (you) will configure Centrify Reporting Service to report on Centrify Server Suite management tasks.
 
-#. Navigate to *Start Menu > Delinea Server Suite 2022 > Configuration Wizard*
+#. While still being on apps-server, navigate to *Start Menu > Delinea Server Suite 2022 > Configuration Wizard*
 
    .. figure:: images/lab-015a.png
 
@@ -268,7 +268,7 @@ In this exercise, Alex (you) will use Delinea Reporting Services to examine spec
 #. Click **Delinea Reporting Services**
 #. Click **Access Manager Reports**
 #. Click **Delegation Report**. This reports on AD groups with assigned Zone Delegation tasks
-#. Under **Trustee filter**, *remove the check mark under Null* and enter in the space provided **cfyS_ZPA**
+#. Under **Trustee** filter, *remove the check mark under Null* and enter in the space provided **cfyS_ZPA**
 
    .. figure:: images/lab-022.png
 

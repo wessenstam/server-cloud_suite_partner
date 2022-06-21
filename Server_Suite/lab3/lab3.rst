@@ -68,7 +68,7 @@ Consolidate Unix local profiles
 #. Under *Select Destination*, click **Next**
 #. Click **Finish**
 #. Under the *db-unix server*, expand *UNIX Data*
-#. Expand *Users* and click *Pending Users*. There will be a list of users that have been imported but are not yet accepted. At the bottom of the list will be the following users: 
+#. Expand *Users* and click *Pending Import*. There will be a list of users that have been imported but are not yet accepted. At the bottom of the list will be the following users: 
 
    - afoster-a 
    - cfyadmin 
@@ -99,7 +99,7 @@ Consolidate Unix local profiles
    .. figure:: images/lab-009.png
 
 #. Let’s now create a new AD group based on the UNIX local users group. Expand *Groups* under *UNIX Data* for the db-unix server
-#. Click **Pending Groups**
+#. Click **Pending Import**
 
    .. figure:: images/lab-010.png
 

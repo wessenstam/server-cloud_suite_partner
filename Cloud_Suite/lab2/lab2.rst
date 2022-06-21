@@ -39,7 +39,7 @@ Prepare for Client Installation
    • **Password:** provided by trainer
 
 2. Launch **Google Chrome** from Desktop and navigate to your unique CIP URL, **\https://<tenantID>.my.centrify.net**
-3. Login to CIP using your admin credentials
+3. Login to CIP using your **admin** credentials
 4. From main menu, navigate to **Settings > Enrollment > Enrollment Codes**
 
    .. figure:: images/lab-001.png
@@ -79,8 +79,10 @@ Install & Enroll Cloud Client on Windows Server
 
    .. figure:: images/lab-008.png
 
-9. After successful installation, click **Finish**
-10. Keep Cloud-win-server session active. You will use the session in the next step.
+9. On the page *Files in Use*, select *Do not close applications. A reboot will be required* and click **Ok**
+10. After successful installation, click **Finish**
+11. Reboot the server and log back in after the reboot as **Administrator** 
+12. Keep Cloud-win-server session active. You will use the session in the next step.
 
 .. note:: 
     To verify a successful enrolment, **cloud-win-server** must be added automatically and available in systems list in **The Portal**. Reopen Chrome, in The Portal and navigate to **Resources > System**. You should see the windows server listed.
@@ -116,7 +118,7 @@ Install & Enroll Cloud Client on Linux Server
 
    .. code-block:: bash
        
-       cenroll -t https://<tenant>.my.centrify.com -c <paste the same enrolment code used earlier> -F all
+       cenroll -t https://<tenant>.my.centrify.net -c <paste the same enrolment code used earlier> -F all
 
    .. figure:: images/lab-012.png
 
@@ -165,7 +167,7 @@ Agent Authentication Login
 Windows Server
 ^^^^^^^^^^^^^^
 
-1. While in CIP Portal, navigate to **Resources > Systems**
+1. Switch back to the **apps-server** and in CIP Portal, navigate to **Resources > Systems**
 
    .. figure:: images/lab-015.png
 
@@ -192,7 +194,7 @@ Windows Server
 
 8. Switch to **Chrome Incognito** Window and login to CIP Portal as:
 
-   • **Username:** zcontractor@labguide
+   • **Username:** zcontractor@labguide-0808
    • **Password:** Provided by trainer
 
 9. Navigate to **Resources > Systems**
@@ -204,6 +206,9 @@ Windows Server
 12. After a successful automatic login to the system, open **Start > Computer Management**
 
     .. figure:: images/lab-020.png
+
+    .. note:: 
+        If you see the message in Chrome to allow the CIP (URL) to *See text and image copied to the Clipboard*, click **Allow**
 
 13. Click on **Local User and Groups > Users**
 14. Note that the users list now contains **zcontractor** as a local user. This user was **auto created** by the client upon *Use My Account* step.
@@ -250,13 +255,13 @@ Linux Server
 ^^^^^^^^^^^^
 
 1. While in **The Portal** logged in as **Admin** user, navigate to **Resources > Systems**
-2. Click on the Linux system object (*rhel7sx64*).
+2. Click on the Linux system object *rhel7sx64*.
 3. Click *Settings*, scroll down and *check (Use My Account is configured on this system)*
 
    .. figure:: images/lab-027.png
 
 4. Click on **Permissions > Add**
-5. Search for (**Contractor Role**)
+5. Search for **Contractor Role**
 
    .. figure:: images/lab-028.png
 
@@ -265,7 +270,7 @@ Linux Server
 8. **Save**
 9. Switch to **Chrome Incognito** session, Refresh the page or login using **zcontractor** again if session was logged out.
 10. Navigate to **Resources > Systems**.
-11. Right click on linux system (**rhel7sx64**)
+11. Right click on linux system **rhel7sx64**
 12. Click on **Use My Account**
 
     .. figure:: images/lab-029.png
@@ -273,6 +278,9 @@ Linux Server
 13. You will be auto logged in using **zcontractor** account. Home Directory auto created.
 
     .. figure:: images/lab-030.png
+
+.. note::
+    If the connection is not made to the Linux machine, make sure the commands that you have used to setup sshd_config AND the content of the .pub file is correct! These are the know issues on the **Use My Account** with respect to Linux machines.
 
 .. raw:: html
 

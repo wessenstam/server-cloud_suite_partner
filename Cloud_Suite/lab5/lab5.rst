@@ -35,7 +35,7 @@ Apply MFA at system Login
 Enable Server Suite MFA in CIP Portal
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-1. Login to your unique CIP Portal URL by navigating to https://<tenant>.my.centrify.net with your admin credentials.
+1. Login to your unique CIP Portal URL by navigating to https://<tenant>.my.centrify.net with your admin credentials on the **apps-server**.
 2. From the main menu on the left, navigate to **Access > Policies**
 
    .. figure:: images/lab-001.png
@@ -85,7 +85,7 @@ Create Computer Role
 5. Click **Add**
 6. Make sure **Computers** is checked as filter
 7. Search for **db-unix**, select it
-8. Click Add
+8. Click **Add**
 
    .. figure:: images/lab-008.png
 
@@ -107,7 +107,7 @@ Assign User to role
 3. Click on **Members**
 4. Click **Add**
 5. Search for user **badams@greensafe.lab**
-6. **Select** the user and click **Save**
+6. **Select** the user, click **Add** and click **Save**
 
    .. figure:: images/lab-010.png
 
@@ -178,12 +178,8 @@ Windows Server
 Linux Server
 """"""""""""
 
-1. Login to **db-server.greensafe.lab** using the following credentials:
-
-   a. **Username:** afoster
-   b. **Password:** Provided by trainer
-
-2. Navigate to downloads folder, double click on (**IwaTrustRoot.cer**) file to open the previously downloaded Connector Certificate.
+1. On the **db-server.greensafe.lab** 
+2. Navigate to downloads folder, double click on **IwaTrustRoot.cer** file to open the previously downloaded Connector Certificate.
 3. Click on **Details > Copy to file**
 
    .. figure:: images/lab-018.png
@@ -201,7 +197,7 @@ Linux Server
 
     .. figure:: images/lab-020.png
 
-11. Navigate to **Computer Configuration > Windows Settings > Security Settings > Public Key Policies > Trusted Root Certification Authorities**
+11. Navigate to **Computer Configuration > Policies > Windows Settings > Security Settings > Public Key Policies > Trusted Root Certification Authorities**
 
     .. figure:: images/lab-021.png
 
@@ -233,7 +229,7 @@ Bradley Adams user (badams) as a member of Team_Sales Security Group in Active D
 8. Right Click **Role Assignments > Assign Role**
 9. Select **Require MFA for Login > Ok**
 10. Add **Team_Sales Group**
-11. Test Console login to **db-server & db-unix servers** using **badams**. You should be prompted for MFA.
+11. Test Console login to **db-server & db-unix servers** using **badams**. You should be prompted for MFA. If any other account is logged in , sign them out.
 
     .. figure:: images/lab-025.png
 
@@ -283,7 +279,8 @@ Configure MFA for UNIX Command
 5. Click **Ok**
 6. Navigate to **Unix Zone > Authorization > Role Assignment**
 7. Right Click **Role Assignment** > Click **Assign Role**
-8. Click **Add AD Account > badams > Ok > Ok**
+8. Click **Unix Service Manager** > Click **Ok**
+9. **Add AD Account > badams > Ok > Ok**
 
 Test Elevation with MFA on UNIX
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -295,18 +292,23 @@ Test Elevation with MFA on UNIX
 
        dzdo systemctl restart firewalld
 
-   .. Note:: adflush
+   .. Note:: 
+      If the command throws an error you are not allowed, log into the db-unix, and run the ``adflush`` command. Then retry the command. If still not working you can use ``dzinfo`` to see the allowed commands
+
+3. Provide the password and MFA challenge will kick in
+4. Close the session
 
 Test Elevation with MFA on Windows
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 1. Login to **db-server** server using **badams** credentials & MFA requirements
-2. From Start Menu, Click **Windows Administrative Tools**
-3. Right click **Windows Firewall**
+2. From **Start Menu**, Click **Windows Administrative Tools**
+3. Right click **Windows Firewall** and select **More > Open File Location**
 4. Click on **Run with Privilege**
 5. Reauthenticate using **badams** credentials and MFA
 
-   .. Note:: dzrefresh
+   .. Note:: 
+      If the command throws an error you are not allowed, log into the db-unix, and run the ``dzrefresh`` command. Then retry the command.
 
 Configure Workflow
 ******************
@@ -349,7 +351,7 @@ Configure Workflow
 
     .. figure:: images/lab-039.png
 
-12. Click **Save**
+12. Provide the password, click **Select** and click **Save**
 13. In the same page, Click **Zone Role Workflow**
 
     .. figure:: images/lab-040.png
@@ -377,14 +379,14 @@ Configure Workflow
 
     .. figure:: images/lab-045.png
 
-22. Click **Save**
+22. Click **Add** and click **Save**
 23. From the main menu on the left, navigate to **Resources > Systems**
 24. Click **Add System**
 25. Add **db-server.greensafe.lab** as shown in the image below
 
     .. figure:: images/lab-046.png
 
-26. **Accept all defaults** and add the system
+26. **Accept all defaults** and add the system using **Next** as many times till you see *Add System* and the **Finish** button. This will validate the credentials and the connection to the db-server. Click **Close** if all went ok
 27. Click on db-server in the systems list
 
     .. figure:: images/lab-047.png
@@ -419,7 +421,7 @@ Configure Workflow
 
     .. figure:: images/lab-053.png
 
-40. Scroll Right to check **Request Zone Role** for **badams** user
+40. Scroll to the right to check **Request Zone Role** for **badams** user
 
     .. figure:: images/lab-054.png
 
@@ -432,7 +434,7 @@ Test the Automatic Role Assignment
 
    .. figure:: images/lab-055.png
 
-2. **Delete** the *existing Role Firewall Management* assigned for **Team_Sales**
+2. **Delete** the *existing Role Firewall Management* assigned for **BAdams**
 3. Open **Chrome Incognito** and login to the portal as **badams**.
 4. From the main menu on the left, navigate to **Resources > Systems**
 5. Right click **db-server**, click on **Request Zone Role**
@@ -457,7 +459,7 @@ Test the Automatic Role Assignment
 
     .. figure:: images/lab-060.png
 
-12. Click **Approve**
+12. Click **Approve** and click **Submit**
 13. In **Access Manager Console**, Navigate to **Global Zone > Windows Zone > Computers > db-server > Role Assignment**
 
     .. figure:: images/lab-061.png

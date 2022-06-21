@@ -42,22 +42,24 @@ Create Elevation Commands
 3. Click **Add**
 4. Fill in the following Information:
 
-   • **Name:** Event Viewer
-   • **Description:** Elevate Event Viewer to View Security Logs
-   • **Command:**
+   - **Name:** Event Viewer
+   - **Description:** Elevate Event Viewer to View Security Logs
+   - **Operating System:** Windows
+   - **Application and argument:**
 
-   .. code-block:: powershell
+     .. code-block:: powershell
 
        "C:\Windows\system32\mmc.exe" "C:\Windows\system32\eventvwr.msc" /s
 
+   - **Match Path:** Standard system path
    .. figure:: images/lab-002.png
 
 5. Click **Save**
 6. Repeat **Steps 3-5** to add another **Windows** command with the following info:
    
-   • **Name:** Resource Monitor
-   • **Description:** Elevate Resource & Performance Monitor Console
-   • **Command:**
+   - **Name:** Resource Monitor
+   - **Description:** Elevate Resource & Performance Monitor Console
+   - **Command:**
 
    .. code-block:: powershell
 
