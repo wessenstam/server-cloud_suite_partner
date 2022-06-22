@@ -42,22 +42,24 @@ Create Elevation Commands
 3. Click **Add**
 4. Fill in the following Information:
 
-   • **Name:** Event Viewer
-   • **Description:** Elevate Event Viewer to View Security Logs
-   • **Command:**
+   - **Name:** Event Viewer
+   - **Description:** Elevate Event Viewer to View Security Logs
+   - **Operating System:** Windows
+   - **Application and argument:**
 
-   .. code-block:: powershell
+     .. code-block:: powershell
 
        "C:\Windows\system32\mmc.exe" "C:\Windows\system32\eventvwr.msc" /s
 
+   - **Match Path:** Standard system path
    .. figure:: images/lab-002.png
 
-5. **Save**
+5. Click **Save**
 6. Repeat **Steps 3-5** to add another **Windows** command with the following info:
    
-   • **Name:** Resource Monitor
-   • **Description:** Elevate Resource & Performance Monitor Console
-   • **Command:**
+   - **Name:** Resource Monitor
+   - **Description:** Elevate Resource & Performance Monitor Console
+   - **Command:**
 
    .. code-block:: powershell
 
@@ -75,7 +77,7 @@ Assign commands to system(s)
 
    .. figure:: images/lab-004.png
 
-2. Click on the Windows server (**wins2019s**)
+2. Click on the Windows Server **wins2019s**
 3. Click on **Privilege Elevation**
 4. Click **Add**
 
@@ -104,18 +106,18 @@ Apply MFA at Elevation Rule as policy
 
 2. Scroll down to the end of the page.
 3. From **Default Privilege Elevation Profile (used if no conditions matched)** dropdown list, select **Contractors MFA Profile**
-4. **Save**
+4. Click **Save**
 
    .. figure:: images/lab-009.png
 
 Test Privilege Elevation
 ^^^^^^^^^^^^^^^^^^^^^^^^
 
-1. Switch to/launch **Chrome incognito**, login to **The Portal** as **zcontractor**.
+1. Switch to/launch **Chrome incognito**, log in the **CIP Portal** as **zcontractor**.
 2. Navigate to **Resources > Systems**.
-3. Right Click Windows Server (**wins2019s**)
+3. Right Click Windows Server **wins2019s**
 4. Click **Use My Account** to login to the server.
-5. Open **Windows Administrative tools** from **Start Menu**
+5. Open **Windows Administrative Tools** from **Start Menu**
 
    .. figure:: images/lab-010.png
 
@@ -148,7 +150,7 @@ Test Privilege Elevation
     .. figure:: images/lab-016.png
 
 17. Repeat Steps **6-15** to test **Resource Monitor** Console Elevation
-18. Note that you will gain access **without MFA** requirement, you have checked **Bypass MFA **for this command!
+18. Note that you will gain access **without MFA** requirement, you have checked **Bypass MFA** for this command!
 
 
 Privilege Elevation for Linux
@@ -181,19 +183,19 @@ Create Elevation Commands
 
    .. figure:: images/lab-019.png
 
-7. **Save**
+7. Click **Save**
 8. Repeat Steps **3 -6** to add another command, use the following information
 
    • **Name:** SSH Service - Restart
    • **Description:** Elevate to allow restart sshd service
    • **Command:**
 
-    .. code-block:: bash
+     .. code-block:: bash
 
          systemctl restart sshd
 
 9. Under *Match Criteria*, Select **Standard User Path**
-10. **Save**
+10. Click **Save**
 
 Assign commands to system(s)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -202,7 +204,7 @@ Assign commands to system(s)
 
    .. figure:: images/lab-020.png
 
-2. Click on the windows server (**rhel7sx64**)
+2. Click on the Linux server **rhel7sx64**
 3. Click on **Privilege Elevation**
 4. Click **Add**
 5. In **Search Command or Application Window**, Select **SSH Service – Restart**
@@ -216,7 +218,7 @@ Assign commands to system(s)
 
 8. Click **Add**
 9. Repeat **Steps 11-15** to add **SSH Config File – Edit** to **Contractor Role**.
-10. **Save**
+10. Click **Save**
 11. The results:
 
     .. figure:: images/lab-023.png
@@ -230,16 +232,17 @@ Apply MFA at Elevation Rule as policy
 
 2. Scroll down to the end of the page.
 3. From **Default Privilege Elevation Profile (used if no conditions matched)** dropdown list, select **Contractors MFA Profile**
-4. **Save**
 
    .. figure:: images/lab-024.png
+
+4. Click **Save**
 
 Test Privilege Elevation
 ^^^^^^^^^^^^^^^^^^^^^^^^
 
-1. Switch to/launch **Chrome incognito**, login to *The Portal* as **zcontractor**.
+1. Switch to/launch **Chrome incognito**, login to the *CIP Portal* as **zcontractor**.
 2. Navigate to **Resources > Systems**.
-3. Right Click Windows Server (**rhel7sx64**)
+3. Right Click Linux Server **rhel7sx64**
 4. Click **Use My Account** to login to the server.
 5. Execute the following command:
 

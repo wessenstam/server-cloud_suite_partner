@@ -27,7 +27,7 @@ Systems used in this lab:
 Add domain users
 ****************
 
-#. Using *Centrify Access Manager*, expand *Child Zones*
+#. Using *Delinea Access Manager*, expand *Child Zones*
 #. Expand **UNIX Zone**
 #. Expand **Computers** 
 #. First, we will manually add a domain user as an authorized user of the system. Right-click the **db-unix** server and select **Add User**
@@ -68,7 +68,7 @@ Consolidate Unix local profiles
 #. Under *Select Destination*, click **Next**
 #. Click **Finish**
 #. Under the *db-unix server*, expand *UNIX Data*
-#. Expand *Users* and click *Pending Users*. There will be a list of users that have been imported but are not yet accepted. At the bottom of the list will be the following users: 
+#. Expand *Users* and click *Pending Import*. There will be a list of users that have been imported but are not yet accepted. At the bottom of the list will be the following users: 
 
    - afoster-a 
    - cfyadmin 
@@ -99,7 +99,7 @@ Consolidate Unix local profiles
    .. figure:: images/lab-009.png
 
 #. Let’s now create a new AD group based on the UNIX local users group. Expand *Groups* under *UNIX Data* for the db-unix server
-#. Click **Pending Groups**
+#. Click **Pending Import**
 
    .. figure:: images/lab-010.png
 
@@ -128,7 +128,7 @@ Consolidate Unix local profiles
 #. Let’s now add the imported users and Linda Scott who was added manually to the new AD group, click **Users** under *UNIX Data of db-unix*
 
    .. note::
-      If only Linda Scott is shown  in the Users section, click the refresh button in the Centrify Access Manager UI. This will show the other two users.
+      If only Linda Scott is shown  in the Users section, click the refresh button in the Delinea Access Manager UI. This will show the other two users.
 
       .. figure:: images/lab-016.png
 

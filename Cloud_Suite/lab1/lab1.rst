@@ -64,21 +64,26 @@ Create Directory Service Users in CIP
 
 Part of the initial configuration includes creating Centrify Directory Service User Accounts that will be used for specific privileged access to Greensafe servers without requiring specific domain identities. In this exercise, Alex (you) will create an account that will manage Centrify Connectors and a second account that will be used by 3rd party contractors who support specific Greensafe servers.
 
-#. While still in the CIP, use the main menu on the left to navigate to *Access > Users*
+#. While still in the CIP, use the main menu on the left to navigate to *Access > General > Suffix*
+
+   .. figure:: images/lab-002a.png
+
+#. Click the **Add** button
+#. Type **labguide-<tenant-nr>** after the *username@* field
+   
+   .. figure:: images/lab-004.png
+
+#. Click **Save**
+#. Navigate to **Access > Users**
 #. Click **Add User**
 
    .. figure:: images/lab-003.png
 
-   .. note::
-       When you get the message that you have to add a suffix to the username@ account, user **labguide** as te prefix!!
-
-       .. figure:: images/lab-004.png
-
 #. Enter the required information to create a new Centrify Directory Service User for Centrify Connector Management.
  
-   - **Username:** ConnectorMgr (leave the suffix to *labguide*)
+   - **Username:** ConnectorMgr (set the suffix to *labguide-####*)
    - **E-Mail Address:** ConnectorMgr@greensafe.lab
-   - **Display Name:** Centrify Connector Manager
+   - **Display Name:** Delinea  Connector Manager
    - **Password:** *Provided by Trainer*
    - **Check** the box to *Password never expires*
 
@@ -86,13 +91,13 @@ Part of the initial configuration includes creating Centrify Directory Service U
 #. Click **Add User** button to create a second user
 #. Enter the required information to create a new Centrify Directory Service User for 3rd Party Contractor Support
  
-   - **Username:** zContractor (leave the suffix to *labguide*)
+   - **Username:** zContractor (set the suffix to *labguide-####*)
    - **E-Mail Address:** contractors@greensafe.lab
    - **Display Name:** Contractor Support Account
    - **Password:** *Provided by Trainer*
    - **Check** the box to *Password never expires*
 
-#. Click Create User
+#. Click **Create User**
 
 
 Create Privileged Roles
@@ -100,7 +105,7 @@ Create Privileged Roles
 
 Privileged roles are created to group privilege to the infrastructure. Roles can be assigned to users, groups, systems and other roles. In this exercise, Alex (you) will create specific Privileged Access Roles that will be used during the implementation and day to day management of the solution. 
 
-#. From the Centrify Identity Platform, use the main menu on the left to navigate to *Access > Roles*
+#. From the Centrify Identity Platform, use the main menu on the left to navigate to **Access > Roles**
 #. Click **Add Role**
 #. Use as name **Connector Manager Role**
 #. Click **Administrative Rights** left to the *Name*
@@ -112,15 +117,15 @@ Privileged roles are created to group privilege to the infrastructure. Roles can
 #. Click **Add**
 #. Click **Members** left to the *Administrative Rights*
 #. Click **Add**
-#. Search for *ConnectorMgr@labguide* and click **Add**
+#. Search for *ConnectorMgr@labguide-####* and click **Add**
 
    .. figure:: images/lab-005.png
 
 #. Click **Save**
+#. Click **Add Role** to add a second role.
 
    .. figure:: images/lab-007.png
-  
-#. Click **Add Role** to add a second role.
+
 #. Use as name **Contractor Role**
 #. Click **Administrative Rights**
 #. Click **Add**
@@ -131,29 +136,8 @@ Privileged roles are created to group privilege to the infrastructure. Roles can
 #. Click **Add**
 #. Click **Members** left to the *Administrative Rights*
 #. Click **Add**
-#. Search for *zContractor@labguide* and click **Add**
+#. Search for *zContractor@labguide-####* and click **Add**
 #. Click **Save**
-#. Click **Add Role** to add a third role.
-#. Use as name **PAS Admin Role**
-#. Click **Administrative Rights**
-#. Click **Add**
-#. This role provides members privilege to administer all resources within the Centrify Identity Platform. Select **Privilege Access Service Administrator**
-#. Click **Add**
-#. Click **Save** (members will be added later)
-#. Click **Add Role** to add a fourth role.
-#. Use as name **PAS Power User Role**
-#. Click **Administrative Rights**
-#. Click **Add**
-#. This role provides members privilege to administer resources they explicitly add to the Centrify Identity Platform and have limited privilege to administer currently added resources. Select **Privilege Access Service Power User**
-#. Click **Add**
-#. Click **Save** (members will be added later)
-#. Click **Add Role** to add a fifth role
-#. Use as name **PAS User Role**
-#. Click **Administrative Rights**
-#. Click **Add**
-#. This role provides members privilege to access resources that are explicitly added to this role with no privilege to add resources to the Centrify Identity Platform. Select **Privilege Access Service User**
-#. Click **Add**
-#. Click **Save** (members will be added later)
 
 
 Install and Configure Centrify Connector
@@ -166,8 +150,9 @@ Centrify Connectors are deployed in the environment to facilitate specific acces
    .. figure:: images/lab-010.png
 
 #. Click **Add Centrify Connector**
-#. Click the *64-bit* link to download the Centrify Connector installation package
+#. Click the **64-bit** link to download the Centrify Connector installation package
 #. Navigate, using the *Windows Explorer*, to the location where the download has been saved (default *Downloads*)
+#. Extract the downloaded zip file and open the created directory
 #. Launch the application **Centrify-Connector-Installer**
 #. At the *Do you want to run this file?*, message click **Run**
 #. At the Welcome Message, click **Next**
@@ -176,18 +161,21 @@ Centrify Connectors are deployed in the environment to facilitate specific acces
 #. Click **Install** (Some open applications will be closed automatically)
 #. When completed, click **Finish** (The Connector Configuration Wizard will start automatically)
 #. At the Welcome Message, click **Next**
-#. Maintain strong encryption options and click **Next**
+#. *Maintain strong encryption options *and click **Next**
 #. Greensafe is not using a proxy server and no changes are needed. Click **Next**
 #. Change the Tenant URL with your unique platform URL. **\https://<tenant>.my.centrify.net** (You can copy and paste the URL directly from the address bar of the browser.) Leave all other options *default*!!!
 
    .. figure:: images/lab-011.png
 
 #. Check the **Use Registration Code**
-#. Open the CID UI and navigate to **Settings > Network > Registration Codes**
+#. Switch back to the Chrome session and click **Close** on the *Add Centrify Connector* screen
+#. Open the portal and navigate to **Settings > Network > Registration Codes**
 
    .. figure:: images/lab-012.png
 
-#. Check the **Account Creation** Line and under **Action**, select **Retrieve Code**
+#. Click **Add** and set the name to **Account Creation** and leave all settings default
+#. Click **Save**
+#. Check the checkbox in front of **Account Creation** and select **Actions > Retrieve Code**
 
    .. figure:: images/lab-013.png
 
@@ -203,22 +191,15 @@ Centrify Connectors are deployed in the environment to facilitate specific acces
       Your codes will be different!!! Don't use the codes as mentioned in the screenshots
 
 #. Click **Next**
-
-..
-   #. You will be prompted to login to the Centrify Identity Platform to register the Connector. Login using the following credentials:
-
-      - **Username:** ConnectorMgr@labguide
-      - **Password:** *Provided by Trainer*
-
 #. Check the box associated to the *greensafe.lab* domain and click **Next**
 #. In the *Permissions are required to domain deleted objects* click **Yes** to assign the permissions
 #. The checks should be successfully run and click **Next**
 
    .. figure:: images/lab-016.png
 
-#. After the connector has been configured successfully and registered with the Centrify Identity Platform, Click **Finish**
-#. The *Centrify Connector Control Panel* will be displayed indicating the current status and connection with the Centrify Identity Platform. You can **close** the Control Panel and return to the Centrify Identity Platform
-#. Close the Centrify Connector Download window and refresh the Centrify Identity Platform. The Centrify Connector (*apps-server.greensafe.lab*) should be displayed as an available connector
+#. After the connector has been configured successfully and registered with the CIP, Click **Finish**
+#. The *Centrify Connector Control Panel* will be displayed indicating the current status and connection with the Centrify Identity Platform. You can **close** the Control Panel and return to the CIP
+#. Navigate to **Settings > Network > Centrify Connector**. The Centrify Connector (*apps-server.greensafe.lab*) should be displayed as an available connector
 
    .. figure:: images/lab-017.png
 
@@ -236,8 +217,7 @@ For the Web Client (Web RDP & SSH), access from public network must be explicitl
 
    .. figure:: images/lab-019.png
 
-3. Check the box next to **Allow access from a public network (web client only)**.
-4. **Save**
+3. Check that the box next to **Allow access from a public network (web client only)** is checked. If not, check the box and click **Save**
 
 Integrate Portal with Audit Installation
 ****************************************
@@ -275,12 +255,11 @@ Create MFA Profiles
    • OATH OTP Client
    • Security Questions
 
-6. Under **Challenge Pass-Through Duration** dropdown list, change from **30 minutes** to **No Pass Through**
+6. Under **Challenge Pass-Through Duration** dropdown list, change from **30 minutes** to **No Pass Through**. Below is an image shows how the profile should look like:
+
+   .. figure:: images/lab-023.png
+
 7. Click **Ok** to save
-
-Below is an image shows how the profile should look like:
-
-.. figure:: images/lab-023.png
 
 Configure MFA Setting for contractor user
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -288,7 +267,7 @@ Configure MFA Setting for contractor user
 1. Launch google chrome in incognito mode and navigate to your unique CIP URL **\https://<tenantID>.my.centrify.net**
 2. Login to CIP using the following:
 
-   Username: **zcontractor@labguide** 
+   Username: **zcontractor@labguide-####** 
    Password: **provided by trainer** 
 
    .. figure:: images/lab-024.png
@@ -306,7 +285,7 @@ Configure MFA Setting for contractor user
    .. figure:: images/lab-027.png
 
 6. **Save** and **sign out** from contractor user portal session.
-7. Test the login again using *zcontractor* user, you should be now asked to enter the security question answer.
+7. Test the login again using *zcontractor* user, you should now be asked to enter the security question answer.
 
    .. figure:: images/lab-028.png
 
@@ -358,36 +337,35 @@ You will create a new policy specific for contractors, the policy will include m
     .. figure:: images/lab-035.png
 
 14. From the dropdown list next to **Allow OATH OTP integration**, Select **Yes**
-15. **Save**
 
     .. figure:: images/lab-036.png
 
-16. In the same policy page, navigate to **Security > Authentication Settings**
+15. In the same policy page, navigate to **User Security > Authentication Settings**
 
     .. figure:: images/lab-037.png
 
-17. From the dropdown list next to **Enable users to configure an OATH OTP client**, select **Yes**
-18. Type (**Mobile Authenticator App**) in the **OATH OTP Display Name** field
+16. From the dropdown list next to **Enable users to configure an OATH OTP client**, select **Yes**
+17. Type **Mobile Authenticator App** in the *OATH OTP Display Name* field
 
     .. figure:: images/lab-038.png
 
-19. Click **Save**
-20. Switch to **Chrome incognito** window. Login with **zcontractor@labguide** user, or refresh the page if it’s still logged in.
-21. Click on the username dropdown list in the upper right corner, select **profile**
+18. Click **Save**
+19. Switch to **Chrome incognito** window. Login with **zcontractor@labguide** user, or refresh the page if it’s still logged in.
+20. Click on the username dropdown list in the upper right corner, select **profile**
 
     .. figure:: images/lab-025.png
 
-22. Click on **Mobile Authenticator App** button
+21. Click on **Mobile Authenticator App** button
 
     .. figure:: images/lab-040.png
 
-23. Open (Google Authenticator or Microsoft Authenticator ) application in your mobile device, add new account.
-24. Scan the QR Code provided in CIP portal.
+22. Open (Google Authenticator or Microsoft Authenticator ) application in your mobile device, add new account.
+23. Scan the QR Code provided in CIP portal.
 
     .. figure:: images/lab-041.png
 
-25. Type in the code provided in mobile application into **Code** field and click **Verify**.
-26. **Sign-out** and login again to test authenticating using password & mobile authenticator code.
+24. Type in the code provided in mobile application into **Code** field and click **Verify**.
+25. **Sign-out** and login again to test authenticating using password & mobile authenticator code.
 
     .. figure:: images/lab-042.png
 

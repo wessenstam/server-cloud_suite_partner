@@ -19,7 +19,7 @@ This fourth lab will cover:
 .. note::
     Estimated time to complete this lab: **20 minutes**
 
-In this exercise, Alex (you) will configure the Centrify Zone Provisioning Agent (ZPA) to automatically provision and deprovision users and groups for access to privileged resources. This will include the configuration of a domain service account that will facilitate this automation as users are added to monitored groups.
+In this exercise, Alex (you) will configure the Delinea Zone Provisioning Agent (ZPA) to automatically provision and deprovision users and groups for access to privileged resources. This will include the configuration of a domain service account that will facilitate this automation as users are added to monitored groups.
 
 ------
 
@@ -54,7 +54,7 @@ Add domain user and groups for the ZPA
 7. Click **Finish**
 
    .. note::
-       Make sure that the account has not been disabled after the creation. In some cases this happens. You can see thatthe account has been disabled if there is a downwards pointing arrow next to the account. To enable the account, right-click th account and select **Enable Account**. Not having the account Enabled will lead to issues later in the lab.
+       Make sure that the account has not been disabled after the creation. In some cases this happens. You can see that the account has been disabled if there is a downwards pointing arrow next to the account. To enable the account, right-click th account and select **Enable Account**. Not having the account Enabled will lead to issues later in the lab.
 
        .. figure:: images/lab-006.png       
 
@@ -90,7 +90,7 @@ Configuring the Zone Provisioning Agent Service
 Configure the Zone Provisioning Agent
 *************************************
 
-#. Navigate to *Start Menu > Centrify Server Suite 2021.1 > Zone Provisioning Agent Configuration Panel*
+#. Navigate to *Start Menu > Delinea Server Suite 2022 > Zone Provisioning Agent Configuration Panel*
 #. Click the **Add** button
 
    .. figure:: images/lab-004.png
@@ -112,7 +112,7 @@ Configure the Zone Provisioning Agent
 Configure the Zones to be automatically provisioned
 ***************************************************
 
-#. Open Centrify Access Manager if you have closed it
+#. Open Delinea Access Manager if you have closed it
 #. Right-click the *Global Zone* and select **Delegate Zone Control**
 #. Click **Add**
 #. Search for and add the AD user **cfyS_zpa**
@@ -140,10 +140,13 @@ Assigning the provisioning to the zone
 
 #. Using *Access Manager*, right-click *Global Zone* and select **Properties**
 #. Click the *Provisioning Tab* and **Enable auto-provisioning of User Profiles**
-#. Click the :fa:`search` button
+
+   .. figure:: images/lab-009a.png
+
+#. Click the :fa:`search` (magnifing glass) button
 #. Find and select **cfyP_Global_Users** and Click **OK**
 #. Under the *Provisioning* tab, *Enable auto-provisioning of Group Profiles*
-#. Click the :fa:`search` button
+#. Click the :fa:`search` (magnifing glass) button
 #. Find and select **cfyP_Global_Groups**
 #. Click **OK**
 #. Click **OK** to save the changes
@@ -170,7 +173,7 @@ Test the auto provisioning
 
 #. Click **OK**
 #. Close ADUC
-#. To speed up the process, we will use the zoneupdate utility. Navigate to *Start Mene > Centrify Server Suite 2021.1 > Zone Provisioning Agent Command Prompt*
+#. To speed up the process, we will use the zoneupdate utility. Navigate to *Start Menu > Delinea Server Suite 2022 > Zone Provisioning Agent Command Prompt*
 
    .. figure:: images/lab-011.png
 
@@ -184,16 +187,17 @@ Test the auto provisioning
 
    .. figure:: images/lab-014.png
 
-#. Type and run 
+#. Type and run the below command to commit the changes immediately
 
    .. code-block:: bash
    
-      zoneupdate “Global Zone” to commit the changes immediately.
+      zoneupdate "Global Zone"
+
 
 
    .. figure:: images/lab-015.png
 
-#. Close *Zone Privisioning Agent Command Prompt*
+#. Close *Zone Provisioning Agent Command Prompt*
 #. Using Access Manager Expand **Global zone > UNIX Data**
 #. Click **Users**. Users from the groups we added will now be configured with UNIX Profiles under the *Global zone > UNIX Data > Users*.
 

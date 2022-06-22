@@ -13,7 +13,7 @@ This first lab will cover:
 2. Initial configuration
 
 
-Greensafe Payroll Services has recently purchased Centrify Server Suite. Alex Foster has been identified as the project engineer in charge of implementing the solution. In this exercise, Alex (you) will install Centrify Authentication and Privilege.
+Greensafe Payroll Services has recently purchased Delinea Server Suite. Alex Foster has been identified as the project engineer in charge of implementing the solution. In this exercise, Alex (you) will install Authentication and Privilege.
 
 .. note::
     Estimated time to complete this lab: **20 minutes**
@@ -38,7 +38,7 @@ Installation
    - **Username:** afoster
    - **Password:** *Provided by Trainer*
 
-#. Open Windows Explorer and navigate to C:\\Share\\CSS2021
+#. Open Windows Explorer and navigate to C:\\Share\\DS2022\\Delinea-Server-Suite-2022-mgmt-win64
 #. Launch the **Autorun** application and click **Authentication and Privilege**
 
    .. figure:: images/lab-001.png
@@ -46,14 +46,11 @@ Installation
 #. When prompted to install *Microsoft SQL Compact 4.0* for support of the Sudoers Import process, click **No**
 #. At the Welcome Message, click **Next**
 #. Accept the EULA and click **Next**
-#. Leave the **User Name** as *administrator* and enter the Company Name **Greensafe Payroll Services**, click **Next**
-#. Under *Select Product Components*, expand *Centrify Utilities* and click the **checkbox** next to *Zone Provisioning Agent*
+#. Leave the **User Name** as *afoster* and enter the Company Name **Greensafe Payroll Services**, click **Next**
+#. Under *Select Product Components*, expand *Utilities* and click the **checkbox** next to *Zone Provisioning Agent*
 #. Click **Next**
 #. Under the *Destination* folder, click **Next**
 #. Under *Confirm Installation Settings*, click **Next** to start the installation
-
-   .. figure:: images/lab-002.png
-
 #. Once completed, **UNCHECK** the options to configure the following products:
 
    - Centrify Reporting Services
@@ -66,24 +63,24 @@ Installation
 
    .. figure:: images/lab-004.png
 
-#. Close the Centrify Server Suite Installation Package by clicking **Exit**
+#. Close the Delinea Server Suite Installation Package by clicking **Exit**
 
 Configuration
 ^^^^^^^^^^^^^
 
-In this exercise, Alex (you) will complete the initial configuration of the solution using the management console, Centrify Access Manager. This configuration will include the creation of an active directory deployment structure and licensing.
+In this exercise, Alex (you) will complete the initial configuration of the solution using the management console, Delinea Access Manager. This configuration will include the creation of an active directory deployment structure and licensing.
 
 #. While still being on the *apps-server.greensafe.lab* Open Windows Explorer and navigate to **C:\\Share**
 #. Open **Training License Keys** and copy the **DirectControl License Key** to the clipboard
 #. **Close** the file
-#. Launch **Centrify Access Manager** from the Desktop shortcut
+#. Launch **Access Manager** from the Desktop shortcut
 
    .. figure:: images/lab-005.png
 
 #. Click **OK** to connect to **dc-server.greensafe.lab**
 #. At the *Welcome Message*, click **Next**
 #. Under *User Credentials*, maintain the default setting and click **Next**
-#. Under *Generate Centrify Recommended Deployment Structure*, Click the **checkbox** to generate the structure and click **Next**
+#. Under *Generate Delinea Recommended Deployment Structure*, Click the **checkbox** to generate the structure and click **Next**
 
    .. figure:: images/lab-006.png
 

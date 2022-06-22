@@ -40,7 +40,7 @@ Installing the Centrify Agent on Unix
    .. Note:: 
        On the Security Alert, click **Yes**
 
-#. Run the following command to install the *Centrify DirectControl Agent (the -y in the command, make sure that the yum will not prompt during installation)*
+#. Run the following command to install the *Delinea DirectControl Agent (the -y in the command, make sure that the yum will not prompt during installation)* **PLEASE NOTE THAT THE COMMAND IS CASE SENSITIVE!**
 
    .. code-block:: bash
 
@@ -67,7 +67,7 @@ Join the Unix machine to the AD and Unix Zone
        adjoin -S greensafe.lab
 
    .. note::
-       During the process you will notice that the system was automatically joined ot the correct UNIX zone because the system was pre-created and matched the DNS record.
+       During the process you will notice that the system was automatically joined to the correct UNIX zone because the system was pre-created and matched the DNS record.
 
        .. figure:: images/lab-002.png
 
@@ -77,7 +77,7 @@ Join the Unix machine to the AD and Unix Zone
 
        reboot
 
-#. **Repeat the steps taken in** *Installing the Centrify Agent on Unix* **and** *Join the Unix machine to the AD and Unix Zone* **for the apps-unix server**
+#. **Repeat the steps taken in** *Installing the Delinea Agent on Unix* **and** *Join the Unix machine to the AD and Unix Zone* **for the apps-unix server**
 
 Join a Windows machine to the correct Zone
 ******************************************
@@ -88,19 +88,20 @@ Join a Windows machine to the correct Zone
    - **Username:** afoster
    - **Password:** *Provided by Trainer*
 
-#. Open **Windows Explorer** and navigate to the Agent folder on the desktop and launch the **Centrify Agent for Windows64** application
+#. Open **Windows Explorer** and navigate to the Agent folder on the desktop and launch the **Delinea Agent for Windows64** application
 #. On the Welcome Message, click **Next**
 #. *Accept the EULA* and click **Next**
 #. Under the *Destination Folder*, click **Next**
 #. Click **Install**
 
    .. note::
+       If prompted to close applications, please proceed
        If you get an message that the system needs to be reboot after the install or services need to be restarted, click **OK**
 
 #. When the installation is complete, click **Finish**
-#. The Agent Configuration Wizard will automatically run
+#. Open the **Agent Configuration** using the *Start Menu > Recently added*
 #. Click **Add Service**
-#. Click **Centrify Privilege Elevation Service**
+#. Click **Privilege Elevation Service**
 
    .. figure:: images/lab-003.png
 
@@ -109,13 +110,13 @@ Join a Windows machine to the correct Zone
 
    .. figure:: images/lab-004.png
 
-#. When prompted, select **Yes** to create a Windows Login Role for the Domain Admins group so they can continue to login to the system
+#. When prompted, select **Yes** to create a Windows Login Role for the Domain Admins group so they can continue to login to the system and click **Ok**
     
-    .. note::
-        If/ When prompted about multifactor authentication enrollment, click Yes to skip the enrollment and continue the configuration
+   .. note::
+       If/ When prompted about multifactor authentication enrollment, click Yes to skip the enrollment and continue the configuration
 
 #. When prompted to restart the system, click **Yes**
-#. Login with the users listed below on the machines being mentioned and confirm the ability to login according to the below table
+#. Login with the user afoster listed below on the machines being mentioned and confirm the ability to login according to the below table
 
    .. list-table::
       :widths: 15 15 15 55
@@ -128,7 +129,7 @@ Join a Windows machine to the correct Zone
       * - afoster
         - *Provided by Trainer*
         - db-unix
-        - **No** (No Local Profile or Centrify Role)
+        - **No** (No Local Profile or Role)
       * - afoster
         - *Provided by Trainer*
         - db-server
@@ -136,27 +137,10 @@ Join a Windows machine to the correct Zone
       * - badams
         - *Provided by Trainer*
         - db-server
-        - **No** (badams is not assigned a Centrify Role)
+        - **No** (badams is not assigned a Role)
      
-#. During the login page you will see **Forgot Password** as a new possibility. When you click it you will get an error message as this is not configured.
-
-   .. figure:: images/lab-005.png
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+   .. note::
+      Use PuTTY on the **apps-server** to log into the db-unix server. For the other two options, login using the console.
 
 .. raw:: html
 
