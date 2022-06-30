@@ -550,7 +550,7 @@ Test the configured roles
 
    .. note::
 
-       To check the commands that have been allowed by the configuration, as the user, run ``dzinfo`` to see the commands that the user has access to. The defined command(s) should be mentioned. If this is not the case log in to the *db-unix* as **root** and run ``dzflush``
+       To check the commands that have been allowed by the configuration, as the user, run ``dzinfo`` to see the commands that the user has access to. The defined command(s) should be mentioned. If this is not the case log in to the *db-unix* as **root** and run ``adflush``
 
 #. Logged in as lbennett, execute the following command:
 
