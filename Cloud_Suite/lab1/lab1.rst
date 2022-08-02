@@ -242,7 +242,7 @@ For the Web Client (Web RDP & SSH), access from public network must be explicitl
 Integrate Portal with Audit Installation
 ****************************************
 
-The Portal can use the audit installation was created before during Server Suite lab to record gateway-based sessions.
+The Portal can use the audit installation, that was created during the Server Suite lab, to record gateway-based sessions.
 
 1. From the portal, use the main menu on the left to navigate to **Settings > Resources > Auditing Service**
 
