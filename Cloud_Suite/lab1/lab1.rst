@@ -247,7 +247,7 @@ Create MFA Profiles
    .. figure:: images/lab-022.png
 
 2. Click **Add Profile** Button.
-3. Type **Contactors MFA** Profile in the name field
+3. Type **Contractors MFA** Profile in the name field
 4. Under **Challenge 1** Column, Check the box next to **Password**
 
 5. Under **Challenge 2 (Optional)** Column, Check the boxes next to:
@@ -310,7 +310,7 @@ You will create a new policy specific for contractors, the policy will include m
 
 7. In **Select Role** box, check the boxes next to:
 
-   • Contractor Manager Role
+   • Connector Manager Role
    • Contractor Role
 
    .. figure:: images/lab-031.png
