@@ -285,9 +285,6 @@ Configure MFA Setting for contractor user
    .. figure:: images/lab-027.png
 
 6. **Save** and **sign out** from contractor user portal session.
-7. Test the login again using *zcontractor* user, you should now be asked to enter the security question answer.
-
-   .. figure:: images/lab-028.png
 
    .. Note:: 
        
