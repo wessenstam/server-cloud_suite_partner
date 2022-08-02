@@ -90,7 +90,7 @@ Install & Enroll Cloud Client on Windows Server
 Install & Enroll Cloud Client on Linux Server
 *********************************************
 
-1. While in **cloud-win-server**, open *Putty* available on Desktop and connect to cloud-nix-server using the following details:
+1. While in **cloud-win-server**, open *Putty* and connect to cloud-nix-server using the following details:
    
    • **IP Address:** 10.0.0.37
    • **Username:** root
