@@ -139,7 +139,7 @@ Install & Enroll Cloud Client on Linux Server
        
        vi /etc/ssh/sshd_config
 
-7. Locate **Challenge Response Authentication** and change it to **yes**
+7. Locate **Challenge Response Authentication** and change it to **yes** and do he same for **UsePam**
 
    .. code-block:: bash
        
