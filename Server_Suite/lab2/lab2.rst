@@ -32,7 +32,7 @@ Systems used in this lab:
 Creation of Zones
 *****************
 
-#. While stilling being logged in in the apps-server.greensfae.lab, open Active Directory Users and Computers (ADUC) 
+#. While stilling being logged in in the **apps-server.greensfae.lab**, open Active Directory Users and Computers (ADUC) 
 
    .. figure:: images/lab-001.png
 
@@ -50,7 +50,7 @@ Creation of Zones
 #. Click **Ok**
 #. Close the group properties by clicking **Ok**
 #. Close **ADUC**
-#. Let’s now create the Parent Zone, back in **Centrify Access Manager**, expand *Centrify Access Manager [dc-server.greensafe.lab]*
+#. Let’s now create the Parent Zone, back in **Delinea Access Manager**, expand *Access Manager [dc-server.greensafe.lab]*
 #. *Right Click on Zones* and select **Create New Zone**
 
    .. figure:: images/lab-004.png
@@ -70,9 +70,10 @@ Creation of Zones
    - **Name:** cfyA
    - Click **Find Now**
    - Select the **cfyA_Global_CentrifyAdmins** group
-   - Click **Ok**
 
-   .. figure:: images/lab-006.png
+     .. figure:: images/lab-006.png
+   
+   - Click **Ok**
 
 #. Click **Next**
 #. Under *Tasks to Delegate*, click **All**
@@ -121,7 +122,7 @@ Prepare Zone Server objects
 Unix Servers
 ^^^^^^^^^^^^
 
-#. Using Centrify Access Manager, expand **UNIX Zone**
+#. Using Delinea Access Manager, expand **UNIX Zone**
 #. Right-click *Computers* and select **Prepare UNIX Computer**
 #. Under *Prepare Computer*, maintain the default settings and click **Next**
 #. Under *Specify Computer*, click **Next** to add a new computer object
@@ -132,18 +133,15 @@ Unix Servers
    .. figure:: images/lab-009.png
 
 #. Click **Next**
-#. Under *Read Only Domain Controller Compatibility and License Type* settings, maintain the default settings and license selection and click **Next**
+#. Under *Read Only Domain Controller Compatibility and License Type* settings, *maintain the default settings* and license selection and click **Next**
 #. Under *SPN Configuration*, maintain the default settings and click **Next**
-#. Under *Delegate Join Permissions*, maintain the default setting to allow the computer to join itself to the zone and click **Next**
+#. Under *Delegate Join Permissions*, *maintain the default setting* to allow the computer to join itself to the zone and click **Next**
 #. Under *Delegate Machine Overrides*, click **Browse** to change the AD group
 #. Search for and select **cfyA_Global_CentrifyAdmins**
 #. Click **Next**
-#. Under *Delegate Permission*, maintain the default settings and click **Next**
+#. Under *Delegate Permission*, *maintain the default settings* and click **Next**
 #. Click **Next** to confirm the selection
 #. Click **Finish** 
-
-   .. figure:: images/lab-010.png
-
 #. **Repeat the above steps** *(Prepare Zone Server Objects)* **for the apps-unix server**
 
 Windows Servers
@@ -151,7 +149,7 @@ Windows Servers
 
 #. Expand **Windows Zone**
 #. Right-click Computers and select **Prepare Windows Computer**
-#. Search for and Add db-server.greensafe.lab
+#. Search and Add **db-server.greensafe.lab**
 #. Click **OK**
 #. In the *Skip delegation permission* popup box, click **Yes**
 

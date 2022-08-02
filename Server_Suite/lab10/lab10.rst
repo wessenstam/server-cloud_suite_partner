@@ -36,7 +36,7 @@ Installing Audit Architecture
 
 Greensafe is required to have audit records of sessions and users. In this exercise, Alex (you) will install and configure the Centrify Audit and Monitoring components for host-based auditing.
 
-#. On the **apps-server** use Windows Explorer to navigate to **C:\\Share\\CSS2021**
+#. On the **apps-server** use Windows Explorer to navigate to **C:\\Share\\DS2022**
 #. Launch the **autorun** application
 #. Click **Audit and Monitor**
 
@@ -69,7 +69,7 @@ Greensafe is required to have audit records of sessions and users. In this exerc
 #. Click **Finish**
 #. Close the Installation Wizard by clicking **Exit**
 
-Configure Centrify Auditing
+Configure Delinea Auditing
 ***************************
 
 In this exercise, Alex (you) will configure Audit Roles and configure the host-based auditing.
@@ -107,19 +107,19 @@ In this exercise, Alex (you) will configure Audit Roles and configure the host-b
    .. figure:: images/lab-007.png
 
 #. Click **Add Service**
-#. Select **Centrify Audit and Monitoring Service** and Click **OK**
+#. Select **Audit and Monitoring Service** and Click **OK**
 
    .. figure:: images/lab-008.png
 
 #. Select *DefaultInstallation* and click **Next**
-#. **Close** the Centrify Agent Configuration.
+#. **Close** the Delinea Agent Configuration.
 #. Let’s now prepare a Unix system for Host Based Auditing. Use the Skytap Navigation to return to the *apps-server.greensafe.lab* server.
 #. Launch PuTTY and login to *db-unix.greensafe.lab* with the following credentials:
    
    - **Username:** root
    - **Password:** *Provided by Trainer*
 
-#. Run the following command to install the Centrify DirectAudit Agent:
+#. Run the following command to install the Delinea DirectAudit Agent:
 
    .. code-block:: bash
        
@@ -135,14 +135,7 @@ Review Audit Sessions
 
 In this exercise, Alex (you) will then review the sessions, create specific queries and document sessions.
 
-#. While still on the *apps-server.greensafe.lab* using the Google Chrome Incognito Window, login to the CIP with the following credentials:
-
-   - **Username:** bhughes@greensafe.lab
-   - **Password:** *Provided by Trainer*
-
-#. Use the main menu on the left to navigate to *Resources > Systems*
-#. Right-click on **db-server.greensafe.lab** and click **Enter Account**
-#. Enter the following credentials to log into the server.
+#. Open *db-server.greensafe.lab* and login using the following credentials:
 
    - **Username:** bhughes@greensafe.lab
    - **Password:** *Provided by Trainer*
@@ -155,12 +148,12 @@ In this exercise, Alex (you) will then review the sessions, create specific quer
    .. figure:: images/lab-010.png
 
 #. Once completed, **exit PowerShell**
-#. Use the *Start Menu > Windows Administrative Tools > Windows Firewall and Advanced Security*
+#. Use *Start Menu > Windows Administrative Tools > Windows Firewall and Advanced Security* to open the Windows Firewall UI
 #. Logout of the session, *Start Menu > User Icon > Sign Out*
 
    .. figure:: images/lab-011.png
 
-#. Let’s open another session using a UNIX system. Launch PuTTY and login to the db-unix.greensafe.lab server with the following credentials:
+#. Let’s open another session using a UNIX system. Switch to *apps-server*, launch PuTTY and login to the **db-unix.greensafe.lab** server with the following credentials:
    
    - **Username:** lbennett@greensafe.lab
    - **Password:** *Provided by Trainer*
@@ -185,7 +178,7 @@ In this exercise, Alex (you) will then review the sessions, create specific quer
 
 #. Add notes related to the session:"witnessed.." and click **OK**. You can then *close* this session
 #. Now let’s look at a UNIX session. Double click on the session for **db-unix.greensafe.lab**
-#. Let’s document this session so other auditors and management have the auditor’s notes. UClick *Session > Update Review Status* and select **Pending for action**
+#. Let’s document this session so other auditors and management have the auditor’s notes. Click *Session > Update Review Status* and select **Pending for action**
 #. Add notes and instructions of the actions that need to be taken and click **OK**. For example: "Security permissions need to be reviewed for this logged in user". You can now *close* this session
 #. Let’s now group sessions based on specific executed commands. Right-click on **Audit Sessions** and select **New Private Query**
 
@@ -213,19 +206,23 @@ Configure Centrify Reporting Service
 
 In this exercise, Alex (you) will configure Centrify Reporting Service to report on Centrify Server Suite management tasks.
 
-#. Navigate to *Start Menu > Centrify Server Suite 2021.1 > Configuration Wizard*
+#. While still being on apps-server, navigate to *Start Menu > Delinea Server Suite 2022 > Configuration Wizard*
+
+   .. figure:: images/lab-015a.png
+
 #. Click **Next**
-#. Under Database Type click **Next**
+#. Under *Database Type* click **Next**
+#. Select **Use an existing SQL Server Instance**
 #. Use the *drop-down menu* and select for **Browse for more...**
 #. Click the **Network Servers** tab
-#. Select Use an Existing SQL Server Instance (**DB-SERVER\\CENTRIFY**) and click **OK**
-#. Click **Next**. It may take a few moments before the next screen is presented!
+#. Select **DB-SERVER\\CENTRIFY** and click **OK**
+#. Click **Next**. *It may take a few moments before the next screen is presented!*
 #. Confirm the selection Deploy Centrify Reports and URL Addresses:
 
-   - **Web Service URL:** \http://DB-SERVER /ReportServer_CENTRIFY
-   - **Report Manager URL:** \http://DB-SERVER /Reports_CENTRIFY
+   - **Web Service URL:** \http://DB-SERVER/ReportServer_CENTRIFY
+   - **Report Manager URL:** \http://DB-SERVER/Reports_CENTRIFY
 
-#. Click **Next**. It may take a few moments before the next screen is presented!
+#. Click **Next**. *It may take a few moments before the next screen is presented!*
 #. Under *Synchronization Mode*, select *Zone-based mode* and click **Next**
 #. Under *Hierarchical Zones*, select **Monitor all hierarchical zones...** and Click **Next**
 #. Under *Classic Zones*, select **Monitor all classic zones...** and click **Next**
@@ -239,12 +236,12 @@ In this exercise, Alex (you) will configure Centrify Reporting Service to report
 
    .. figure:: images/lab-017.png
 
-#. Under *Report Services Option*, Select *Use Built-In Account (Local System)* and click **Next**
+#. Under *Report Services Option*, Select **Use Built-In Account (Local System)** and click **Next**
 #. Permissions will be verified, identifying successes and failures. Click **Close**
 
    .. figure:: images/lab-018.png
 
-#. Under *Summary*, click **Next**. Please be patient as the database is configured. The process takes approx. minutes
+#. Under *Summary*, click **Next**. Please be patient as the database is configured. The process takes approx. 2-4 minutes
 #. Check the option to *Start synchronizing data from Active Directory* and click **Finish** to close the Report Configuration Wizard
 
    .. figure:: images/lab-019.png
@@ -254,7 +251,7 @@ In this exercise, Alex (you) will configure Centrify Reporting Service to report
    .. note::
        If you are being asked for login, use **afoster** with the password: *Provided by Trainer*
 
-#. Confirm Centrify Report Services Folder is displayed. Leave the Browser window open to complete the next lab exercise
+#. Confirm Delinea Report Services Folder is displayed. Leave the Browser window open to complete the next lab exercise
 
    .. figure:: images/lab-020.png
 
@@ -262,34 +259,23 @@ In this exercise, Alex (you) will configure Centrify Reporting Service to report
 Review Centrify Reporting
 *************************
 
-In this exercise, Alex (you) will use Centrify Reporting Services and Centrify Identity Platform to examine specific reports.
+In this exercise, Alex (you) will use Delinea Reporting Services to examine specific reports.
 
 #. From the Centrify Reporting Services (SRSS) website, click **Details View**
 
    .. figure:: images/lab-021.png
 
-#. Click **Centrify Reporting Services**
+#. Click **Delinea Reporting Services**
 #. Click **Access Manager Reports**
 #. Click **Delegation Report**. This reports on AD groups with assigned Zone Delegation tasks
-#. Under **Trustee filter**, *remove the check mark under Null* and enter in the space provided **cfyS_ZPA**
+#. Under **Trustee** filter, *remove the check mark under Null* and enter in the space provided **cfyS_ZPA**
 
    .. figure:: images/lab-022.png
 
 #. Click **View Report**. We delegated specific zone tasks to this account as part of automated provisioning through the ZPA and the results will be shown in this report. 
 
-.. TODO: No builtin reports are available in the installed CIP! Did we forgot to do this???
-    #. Close the web page and return to the *Centrify Identity Platform*, as Alex Foster
-    #. Use the main menu on the left to navigate to *Reports*
-    #. Expand **Builtin Reports**
-    #. Expand **Security**
-    #. Click **Users Security Question State**
-    #. Click **OK** to view the report. This report will indicate who has and who has not satisfied the MFA challenge the company now requires to access company servers.
-    #. Use the main menu on the left to navigate to *Reports*
-    #. Expand **Builtin Reports**
-    #. Expand **Effective Rights**
-    #. Expand **Role to Object**
-    #. Click **Systems**
-    #. Select a system in the list to view the current role-based privilege that has been granted to the single system. This will help determine if too much privilege is being granted to critical systems.
+   .. figure:: images/lab-023.png
+
 
 .. raw:: html
 
