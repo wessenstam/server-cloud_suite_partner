@@ -77,7 +77,7 @@ Join the Unix machine to the AD and Unix Zone
 
        reboot
 
-#. **Repeat the steps taken in** *Installing the Delinea Agent on Unix* **and** *Join the Unix machine to the AD and Unix Zone* **for the apps-unix server**
+#. **Repeat the steps taken in** *Installing the Delinea Agent on Unix* **and** *Join the Unix machine to the AD and Unix Zone* **for apps-unix**
 
 Join a Windows machine to the correct Zone
 ******************************************
