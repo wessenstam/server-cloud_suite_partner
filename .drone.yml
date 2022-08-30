@@ -3,7 +3,7 @@ type: exec
 name: default
 
 steps:
-- name: Sync Files (Main)
+- name: Build HTML (Main)
   commands:
   # If errored execute, make sure we don't have anything left
   - rm -Rf /tmp/$DRONE_REPO_NAME
@@ -14,11 +14,11 @@ steps:
   - chown -Rf ubuntu:ubuntu /home/ubuntu/www/html/$DRONE_REPO_NAME
   # Clean up
   - rm -Rf /tmp/$DRONE_COMMIT_SHA
-  
   when:
     branch:
     - main
-  
+    event:
+    - push
 - name: Build Dev HTML(dev)
   commands:
   - rm -Rf /tmp/$DRONE_REPO_NAME
@@ -27,4 +27,6 @@ steps:
   - rm -Rf /tmp/$DRONE_REPO_NAME
   when:
     branch:
-    - dev 
+    - dev
+    event:
+    - push
