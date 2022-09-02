@@ -53,7 +53,7 @@ Greensafe is required to have audit records of sessions and users. In this exerc
 
     ![](images/lab-002.png)
 
-12. Using Windows Explorer to navigate to **\\10.0.0.254\shared\DS2022\Training_Lics.txt**
+12. Using Windows Explorer to navigate to **\\\\10.0.0.254\shared\DS2022\Training_Lics.txt**
 
 13. Copy the **Audit License Key (DirectAudit)** to the clipboard
 
