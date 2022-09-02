@@ -73,7 +73,7 @@ In this exercise, Alex (you) will complete the initial configuration of the solu
 
 !!! Attention
     You will be asked for a license in the installation phase of the software. Navigate, using Windows Explorer to the following path on your machine to grab the licence:
-    **\\172.31.32.254\DS2022\Training_Lics.txt** 
+    **\\10.0.0.254\DS2022\Training_Lics.txt** 
     Copy the DC License. The DA License will be needed later in the training.
 
 03. **Close** the file
