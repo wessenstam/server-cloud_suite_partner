@@ -81,7 +81,7 @@ In this exercise, Alex (you) will configure the Centrify Zone Provisioning Agent
     - **Username:** afoster
     - **Password:** *Provided by Trainer*
 
-03. Open **Windows Explorer** and navigate to the Agent folder on the desktop and launch the **Delinea Agent for Windows64** application
+03. Open **Google Chrome** and navigate to <https://d2qljt6m66vn62.cloudfront.net/Agent-for-Windows-5.9.0.zip>. Unpack the downloaded zip file and launch the **Agent for Windows.msi** file
 
 04. On the Welcome Message, click **Next**
 
