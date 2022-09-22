@@ -48,8 +48,7 @@ In this exercise, Alex (you) will login to the Centrify Identity Platform and pe
 
 08. Under *Login Customization*, click the **Upload** button to change the Login Image, select C:\\Share\\Greensafe Login.png
 
-    :::{figure} images/lab-002.png
-    :::
+    ![](images/lab-002.png)
 
 09. Under *Message Customization*, click the **Upload** button to change the E-Mail Image, select C:\\Share\\Greensafe Portal.png
 
@@ -63,16 +62,13 @@ Part of the initial configuration includes creating Centrify Directory Service U
 
 2. Click **Add User**
 
-   :::{figure} images/lab-003.png
-   :::
+    ![](images/lab-003.png)
+   
+   !!!note
+    When you get the message that you have to add a suffix to the username@ account, user **labguide** as te prefix!!
 
-   ::::{note}
-   When you get the message that you have to add a suffix to the username@ account, user **labguide** as te prefix!!
-
-   :::{figure} images/lab-004.png
-   :::
-   ::::
-
+    ![](images/lab-004.png)
+   
 3. Enter the required information to create a new Centrify Directory Service User for Centrify Connector Management.
 
    - **Username:** ConnectorMgr (leave the suffix to *labguide*)
@@ -111,8 +107,7 @@ Privileged roles are created to group privilege to the infrastructure. Roles can
 
 06. This role requires the privilege to Register and Manage Centrify Connectors, select **Register and Administer Connectors**
 
-    :::{figure} images/lab-009.png
-    :::
+    ![](images/lab-009.png)
 
 07. Click **Add**
 
@@ -122,13 +117,12 @@ Privileged roles are created to group privilege to the infrastructure. Roles can
 
 10. Search for *ConnectorMgr@labguide* and click **Add**
 
-    :::{figure} images/lab-005.png
-    :::
+    ![](images/lab-005.png)
 
 11. Click **Save**
 
-    :::{figure} images/lab-007.png
-    :::
+    ![](images/lab-007.png)
+    
 
 12. Click **Add Role** to add a second role.
 
@@ -140,8 +134,8 @@ Privileged roles are created to group privilege to the infrastructure. Roles can
 
 16. This role requires privilege assigned by an administrator and should be limited to servers that are specifically assigned to the role. Greensafe  has contractors that manage Greensafe database servers. Select **Privilege Access Service Users**
 
-    :::{figure} images/lab-008.png
-    :::
+    ![](images/lab-008.png)
+
 
 17. Click **Add**
 
@@ -201,8 +195,7 @@ Centrify Connectors are deployed in the environment to facilitate specific acces
 
 01. From the Centrify Identity Platform, use the main menu on the left to navigate to *Settings > Network > Centrify Connector*
 
-    :::{figure} images/lab-010.png
-    :::
+    ![](images/lab-010.png)
 
 02. Click **Add Centrify Connector**
 
@@ -232,41 +225,31 @@ Centrify Connectors are deployed in the environment to facilitate specific acces
 
 15. Change the Tenant URL with your unique platform URL. https://\<tenant>.my.centrify.net (You can copy and paste the URL directly from the address bar of the browser.) Leave all other options *default*!!!
 
-    :::{figure} images/lab-011.png
-    :::
+    ![](images/lab-011.png)
 
 16. Check the **Use Registration Code**
 
 17. Open the CID UI and navigate to **Settings > Network > Registration Codes**
 
-    :::{figure} images/lab-012.png
-    :::
+    ![](images/lab-012.png)
 
 18. Check the **Account Creation** Line and under **Action**, select **Retrieve Code**
 
-    :::{figure} images/lab-013.png
-    :::
+    ![](images/lab-013.png)
 
-    :::{figure} images/lab-014.png
-    :::
+    ![](images/lab-014.png)
 
 19. Click **Copy** to copy the code to the clipboard
 
 20. Back in the **Centrify Connector Configuration**, paste the *Registration Code*
 
-    :::{figure} images/lab-015.png
-    :::
+    ![](images/lab-015.png)
 
-    :::{note}
-    Your codes will be different!!! Don't use the codes as mentioned in the screenshots
-    :::
+    !!!note
+        Your codes will be different!!! Don't use the codes as mentioned in the screenshots
+
 
 21. Click **Next**
-
-% #. You will be prompted to login to the Centrify Identity Platform to register the Connector. Login using the following credentials:
-%
-%    - **Username:** ConnectorMgr@labguide
-%    - **Password:** *Provided by Trainer*
 
 1. Check the box associated to the *greensafe.lab* domain and click **Next**
 
@@ -274,8 +257,7 @@ Centrify Connectors are deployed in the environment to facilitate specific acces
 
 3. The checks should be successfully run and click **Next**
 
-   :::{figure} images/lab-016.png
-   :::
+    ![](images/lab-016.png)
 
 4. After the connector has been configured successfully and registered with the Centrify Identity Platform, Click **Finish**
 
@@ -283,8 +265,8 @@ Centrify Connectors are deployed in the environment to facilitate specific acces
 
 6. Close the Centrify Connector Download window and refresh the Centrify Identity Platform. The Centrify Connector (*apps-server.greensafe.lab*) should be displayed as an available connector
 
-   :::{figure} images/lab-017.png
-   :::
+    ![](images/lab-017.png)
+
 
 ```{raw} html
 <hr><CENTER>
