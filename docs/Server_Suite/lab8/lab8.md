@@ -268,8 +268,8 @@ Centrify Connectors are deployed in the environment to facilitate specific acces
     ![](images/lab-017.png)
 
 
-```{raw} html
+
 <hr><CENTER>
 <H2 style="color:#00FF59">This concludes this lab</font>
 </CENTER>
-```
+
