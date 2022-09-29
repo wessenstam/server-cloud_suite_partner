@@ -50,7 +50,7 @@ plugins:
       author: Delinea Technical Enablement
       cover_title: Server PAM Partner Training
       cover_subtitle:  Server Suite and Cloud Suite
-      cover_logo: img/Server_Pam.png
+      cover_logo: file:///C:/Users/WEssenstam.DELINEA/github/server-cloud_suite_partner/docs/img/Server_Pam.png
       copyright: Delinea
       enabled_if_env: ENABLE_PDF_EXPORT
       debug_html: false
