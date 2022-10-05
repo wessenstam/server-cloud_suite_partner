@@ -360,7 +360,7 @@ Greensafe has made the decision to add additional database servers. The new serv
 
 08. Click **OK**
 
-09. Right-click *Commands* and select **New Command Right**
+09. Right-click *Commands* and select **New Command**
 
 10. *Name* the new command right **Service Restart**
 
