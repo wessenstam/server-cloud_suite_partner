@@ -121,8 +121,7 @@ Privileged roles are created to group privilege to the infrastructure. Roles can
 
     ![](images/lab-005.png)
 
-    !!!Warning
-
+    !!!warning
         The search is case sensitive!!!
 
 11. Click **Save**
