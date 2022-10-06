@@ -161,11 +161,10 @@ This second lab will cover:
 
 9. **Write and quit** by clicking *Escape* button on keyboard > type **:wq!** > hit **Enter**
 
-!!!Note
-    To verify a successful enrolment, **cloud-nix-server** must be added automatically and available in systems list in **The Portal**. Reopen Chrome, in CIP and navigate to **Resources > System**. You should see the Linux server listed.
-
 10. Restart the sshd daemon using ``systemctl restart sshd``.
 
+!!!Note
+    To verify a successful enrolment, **cloud-nix-server** must be added automatically and available in systems list in **The Portal**. Reopen Chrome, in CIP and navigate to **Resources > System**. You should see the Linux server listed.
 ### Agent Authentication Login
 
 #### Windows Server
