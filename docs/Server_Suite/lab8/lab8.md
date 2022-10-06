@@ -238,6 +238,8 @@ Centrify Connectors are deployed in the environment to facilitate specific acces
 
     ![](images/lab-012.png)
 
+18. Click the **Add** button and in the name type **Account Creation** and click **Save**
+
 18. Check the **Account Creation** Line and under **Action**, select **Retrieve Code**
 
     ![](images/lab-013.png)
