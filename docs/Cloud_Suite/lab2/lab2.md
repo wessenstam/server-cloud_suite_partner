@@ -22,7 +22,7 @@ This second lab will cover:
     - apps-server.greensafe.lab
     - cloud-win-server
     - cloud-linux-server
-    - https://tenant.my.centrify.net
+    - https://<tenant\>.my.centrify.net
 
 
 
@@ -33,7 +33,7 @@ This second lab will cover:
     - **Username:** Administrator
     - **Password:** provided by trainer
 
-02. Launch **Google Chrome** from Desktop and navigate to your unique CIP URL, **https://tenant.my.centrify.net**
+02. Launch **Google Chrome** from Desktop and navigate to your unique CIP URL, **https://<tenant\>.my.centrify.net**
 
 03. Login to CIP using your **admin** credentials
 
@@ -69,7 +69,7 @@ This second lab will cover:
 
 03. On the *EULA* page, *check* the box (*I Accept the terms in the license agreement*) and click **Next**
 
-04. In Enrollment Parameters page, type your unique CIP URL (https://tenant.my.centrify.net) in the first field
+04. In Enrollment Parameters page, type your unique CIP URL (https://<tenant\>.my.centrify.net) in the first field
 
 05. **Paste** the enrollment code from clipboard in the second field (Enrollment Code).
 
@@ -133,7 +133,7 @@ This second lab will cover:
 5. Download the SSH Master Key file from the Portal to the Linux server, using the following command.
 
     ```bash
-    curl -o /etc/ssh/centrify_tenant_ca.pub https://<tenantID>/servermanage/getmastersshkey
+    curl -o /etc/ssh/centrify_tenant_ca.pub https://<tenant>.my.centrify.net/servermanage/getmastersshkey
     ```
 
     ![](images/lab-013.png)
@@ -164,6 +164,7 @@ This second lab will cover:
 !!!Note
     To verify a successful enrolment, **cloud-nix-server** must be added automatically and available in systems list in **The Portal**. Reopen Chrome, in CIP and navigate to **Resources > System**. You should see the Linux server listed.
 
+10. Restart the sshd daemon using ``systemctl restart sshd``.
 
 ### Agent Authentication Login
 
@@ -199,7 +200,7 @@ This second lab will cover:
 
 08. Switch to **Chrome Incognito** Window and login to CIP Portal as:
 
-    - **Username:** <mailto:zcontractor@labguide-0808>
+    - **Username:** zcontractor@labguide-####
     - **Password:** Provided by trainer
 
 09. Navigate to **Resources > Systems**

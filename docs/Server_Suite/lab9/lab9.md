@@ -19,7 +19,7 @@ This ninth lab will cover:
 
         - dc-server.greensafe.lab
         - apps-server.greensafe.lab
-        - https://\<tenant>.my.centrify.net
+        - https://<tenant\>.my.centrify.net
 
 
 ### Configure Role-Based Permissions
@@ -396,6 +396,9 @@ Systems have been added into the Centrify Identity Platform and while global and
 
 19. Search for **PAS Admin Role** and click **Add**
 
+    !!!warning
+        Remember that the search is case sensitive!
+
 20. Under PAS Admin Role permissions, assign **View** permissions
 
 21. Click **Save**. This change will grant PAS Administrators permission to see the system set when they login
@@ -435,14 +438,14 @@ Systems have been added into the Centrify Identity Platform and while global and
 38. Under each of the roles added, confirm the **View** permissions has been added.
 
 39. Click **Save**. This change will grant PAS Administrators and PAS Power Users permission to see the system set when they login
-){note}
-    Now that permissions are assigned to view the set, let's assign permissions to members of specific sets.)
+
+Now that permissions are assigned to view the set, let's assign permissions to members of specific sets.
 
 40. Use the main menu on the left to navigate to *Resources > Systems*
 
 41. Right-click on the *Greensafe Unix Servers* set and click **Modify**
 
-42. Under *Member Permissions*, click the\*\* Add\*\* button
+42. Under *Member Permissions*, click the **Add** button
 
 43. Search for **Team_UnixAdmins** and click **Add**
 
@@ -462,8 +465,7 @@ Systems have been added into the Centrify Identity Platform and while global and
 
 51. Click Save
 
-    !!!Note
-        Now permissions have been assigned to specific groups to see specific sets. We have also assigned member permissions to specific groups so individual system permissions do not need to be assigned individually. Now let's confirm the permissions, using the same accounts we worked with at the beginning of the exercise.
+As permissions have been assigned to specific groups to see specific sets. We have also assigned member permissions to specific groups so individual system permissions do not need to be assigned individually. Now let's confirm the permissions, using the same accounts we worked with at the beginning of the exercise.
 
 52. Using Google Chrome Menu, establish a New Incognito Window so you can login as each of the users (on the following page) to confirm the information in the table.
 
@@ -497,12 +499,13 @@ In this exercise, Alex (you) will configure systems to validate users with multi
 05. Click **IWA Service**
 
 06. Click the Blue link **Download your IWA root CA certificate** ans save the file
-){note}
-    When the Warning is mentioned, click **Keep**)
+    
+    !!!note
+        When the Warning is mentioned, click **Keep**
 
 07. Click **Cancel** to close the properties of the Connector
 
-08. Let's now configure the Centrify Identity Platform Authentication Profile for client side login with MFA
+Let's now configure the Centrify Identity Platform Authentication *Profile* for client side login with MFA
 
 09. Use main menu on the left to navigate to *Settings > Authentication > Authentication Profiles*
 
@@ -518,7 +521,7 @@ In this exercise, Alex (you) will configure systems to validate users with multi
 
 14. Click **OK** to save the new profile
 
-15. Let's now configure the Centrify Identity Platform Privilege Role for client side login with MFA
+Let's now configure the Centrify Identity Platform Privilege *Role* for client side login with MFA
 
 16. Use the main menu on the left to navigate to **Access > Roles**
 
@@ -549,7 +552,7 @@ In this exercise, Alex (you) will configure systems to validate users with multi
 
 24. Click **Save**
 
-25. Let's now configure the Centrify Identity Platform Policy for client side login with MFA
+Let's now configure the Centrify Identity Platform *Policy* for client side login with MFA
 
 26. Use the main menu on the left to navigate to *Access > Policies*
 
@@ -648,5 +651,9 @@ In this exercise, Alex (you) will configure systems to validate users with multi
 62. Was Laura Bennett permitted to login?
 
 63. Run ```dzdo systemctl restart firewalld```
+
+    !!!warning
+        If you receive errors on the command where you would see something like "Sorry cannot login..", have you logged into the cloud tenant as lbennet@greensafe.lab?
+        For MFA to work, as defined in the MFA policy, the user MUST have an account in the Cloud tenant. This can be established by opening the Admin Portal and logging in with the account. Without the account available in the cloud tenant, you might get errors pointing towards the Cloud Connector not available, MFA failures etc.
 
 64. Was Laura Bennett permitted to run this command?

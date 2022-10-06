@@ -18,7 +18,7 @@ This third lab will cover:
 
     - cloud-win-server
     - cloud-linux-server
-    - https://tenant.my.centrify.net
+    - https://<tenant\>.my.centrify.net
 
 ______________________________________________________________________
 

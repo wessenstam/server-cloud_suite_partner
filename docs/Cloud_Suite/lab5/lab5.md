@@ -20,14 +20,14 @@ This lab will cover:
     - apps-server.greensafe.lab
     - db-server.greensafe.lab
     - db-unix.greensafe.lab
-    - https://tenant.my.centrify.net
+    - https://<tenant/>.my.centrify.net
 
 
 ### Apply MFA at system Login
 
 #### Enable Server Suite MFA in CIP Portal
 
-1. Login to your unique CIP Portal URL by navigating to <https:/>/tenant.my.centrify.net with your admin credentials on the **apps-server**.
+1. Login to your unique CIP Portal URL by navigating to https://<tenant\>.my.centrify.net with your admin credentials on the **apps-server**.
 
 2. From the main menu on the left, navigate to **Access > Policies**
 
@@ -125,11 +125,11 @@ This lab will cover:
 
 #### Create User’s MFA Profile
 
-1. Launch **Chrome Incognito** session and navigate to the portal using *https://tenant.my.centrify.net*
+1. Launch **Chrome Incognito** session and navigate to the portal using *https://<tenant\>.my.centrify.net*
 
 2. Login to The Portal with the following credentials:
 
-    1. **Username:** <mailto:badams@greensafe.lab>
+    1. **Username:** badams@greensafe.lab
     2. **Password:** Provided by trainer
 
     !!!Note
@@ -160,7 +160,7 @@ Server Suite Agents (Windows and UNIX) communicates with The Portal via availabl
     1. **Username:** afoster
     2. **Password:** Provided by trainer
 
-02. Launch **Google Chrome** and navigate to *https://tenant.my.centrify.net* and login using your admin account
+02. Launch **Google Chrome** and navigate to *https://<tenant\>.my.centrify.net* and login using your admin account
 
 03. From the main menu on the left, navigate to **Settings > Network > Centrify Connectors**
 
@@ -355,7 +355,7 @@ MFA at privilege elevation is a feature enabled at the Role level in Access Mana
 
 ### Configure Workflow
 
-01. Login to your unique CIP URL <https:/>/tenant.my.centrify.net as admin user.
+01. Login to your unique CIP URL https://<tenant\>.my.centrify.net as admin user.
 
 02. Navigate to **Resources > Domains**
 

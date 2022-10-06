@@ -17,7 +17,7 @@ This fourth lab will cover:
 
     - cloud-win-server
     - cloud-linux-server
-    - https://tenant.my.centrify.net
+    - https://<tenant/>.my.centrify.net
 
 
 ### Apply MFA Everywhere
@@ -91,7 +91,7 @@ In the previous labs, you have configured MFA at Portal login & MFA at Cloud Cli
 
 08. To login to the server, use the following credentials:
 
-    1. **Username:** <mailto:zcontractor@labguide-####>
+    1. **Username:** zcontractor@labguide-####
     2. **Password:** Provided by the trainer
 
 09. You will be prompted to choose one of the available MFA options, **type the number** that corresponds the MFA mechanism you prefer to choose and hit **Enter**

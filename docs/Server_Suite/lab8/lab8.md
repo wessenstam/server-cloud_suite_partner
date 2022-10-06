@@ -64,18 +64,18 @@ Part of the initial configuration includes creating Centrify Directory Service U
 
     ![](images/lab-003.png)
    
-   !!!note
-    When you get the message that you have to add a suffix to the username@ account, user **labguide** as te prefix!!
+    !!!note
+        When you get the message that you have to add a suffix to the username@ account, user **labguide** as te prefix!!
 
-    ![](images/lab-004.png)
+        ![](images/lab-004.png)
    
 3. Enter the required information to create a new Centrify Directory Service User for Centrify Connector Management.
 
-   - **Username:** ConnectorMgr (leave the suffix to *labguide*)
-   - **E-Mail Address:** <mailto:ConnectorMgr@greensafe.lab>
-   - **Display Name:** Centrify Connector Manager
-   - **Password:** *Provided by Trainer*
-   - **Check** the box to *Password never expires*
+    - **Username:** ConnectorMgr (leave the suffix to *labguide*)
+    - **E-Mail Address:** <mailto:ConnectorMgr@greensafe.lab>
+    - **Display Name:** Centrify Connector Manager
+    - **Password:** *Provided by Trainer*
+    - **Check** the box to *Password never expires*
 
 4. Click **Create User**
 
@@ -83,11 +83,11 @@ Part of the initial configuration includes creating Centrify Directory Service U
 
 6. Enter the required information to create a new Centrify Directory Service User for 3rd Party Contractor Support
 
-   - **Username:** zContractor (leave the suffix to *labguide*)
-   - **E-Mail Address:** <mailto:contractors@greensafe.lab>
-   - **Display Name:** Contractor Support Account
-   - **Password:** *Provided by Trainer*
-   - **Check** the box to *Password never expires*
+    - **Username:** zContractor (leave the suffix to *labguide*)
+    - **E-Mail Address:** <mailto:contractors@greensafe.lab>
+    - **Display Name:** Contractor Support Account
+    - **Password:** *Provided by Trainer*
+    - **Check** the box to *Password never expires*
 
 7. Click Create User
 
@@ -223,7 +223,7 @@ Centrify Connectors are deployed in the environment to facilitate specific acces
 
 14. Greensafe is not using a proxy server and no changes are needed. Click **Next**
 
-15. Change the Tenant URL with your unique platform URL. https://\<tenant>.my.centrify.net (You can copy and paste the URL directly from the address bar of the browser.) Leave all other options *default*!!!
+15. Change the Tenant URL with your unique platform URL. https://<tenant\>.my.centrify.net (You can copy and paste the URL directly from the address bar of the browser.)
 
     ![](images/lab-011.png)
 

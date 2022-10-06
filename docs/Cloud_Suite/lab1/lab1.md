@@ -13,7 +13,7 @@ This first lab will cover:
 7. MFA Setup
 
 !!!Note
-Estimated time to complete this lab: **60 minutes**
+    Estimated time to complete this lab: **60 minutes**
 
 !!!Attention
 
@@ -21,7 +21,7 @@ Estimated time to complete this lab: **60 minutes**
 
     - dc-server.greensafe.lab
     - apps-server.greensafe.lab
-    - https://tenant.my.centrify.net
+    - https://<tenant\>.my.centrify.net
 
 
 
@@ -34,7 +34,7 @@ In this exercise, Alex (you) will login to the Centrify Identity Platform and pe
     - **Username:** afoster
     - **Password:** *Provided by Trainer*
 
-02. Launch Google Chrome and browse to your unique Identity Platform URL **https://tenant.my.centrify.net**
+02. Launch Google Chrome and browse to your unique Identity Platform URL **https://<tenant\>.my.centrify.net**
 
 03. Login to your unique Identity Platform with the following credentials:
 
@@ -82,7 +82,7 @@ Part of the initial configuration includes creating Centrify Directory Service U
 07. Enter the required information to create a new Centrify Directory Service User for Centrify Connector Management.
 
     - **Username:** ConnectorMgr (set the suffix to *labguide-####*)
-    - **E-Mail Address:** <mailto:ConnectorMgr@greensafe.lab>
+    - **E-Mail Address:** ConnectorMgr@greensafe.lab
     - **Display Name:** Delinea  Connector Manager
     - **Password:** *Provided by Trainer*
     - **Check** the box to *Password never expires*
@@ -94,7 +94,7 @@ Part of the initial configuration includes creating Centrify Directory Service U
 10. Enter the required information to create a new Centrify Directory Service User for 3rd Party Contractor Support
 
     - **Username:** zContractor (set the suffix to *labguide-####*)
-    - **E-Mail Address:** <mailto:contractors@greensafe.lab>
+    - **E-Mail Address:** contractors@greensafe.lab
     - **Display Name:** Contractor Support Account
     - **Password:** *Provided by Trainer*
     - **Check** the box to *Password never expires*
@@ -128,6 +128,9 @@ Privileged roles are created to group privilege to the infrastructure. Roles can
 10. Search for *ConnectorMgr@labguide-####* and click **Add**
 
     ![](images/lab-005.png)
+
+    !!!warning
+        The search is case sensitive!
 
 11. Click **Save**
 
@@ -191,7 +194,7 @@ Centrify Connectors are deployed in the environment to facilitate specific acces
 
 15. Greensafe is not using a proxy server and no changes are needed. Click **Next**
 
-16. Change the Tenant URL with your unique platform URL. **https://tenant.my.centrify.net** (You can copy and paste the URL directly from the address bar of the browser.) Leave all other options *default*!!!
+16. Change the Tenant URL with your unique platform URL. **https://<tenant\>.my.centrify.net** (You can copy and paste the URL directly from the address bar of the browser.)
 
     ![](images/lab-011.png)
 
@@ -297,7 +300,7 @@ In this lab, we are going to learn how to create MFA profiles in CIP. The portal
 
 #### Configure MFA Setting for contractor user
 
-1. Launch google chrome in incognito mode and navigate to your unique CIP URL **https://tenant.my.centrify.net**
+1. Launch google chrome in incognito mode and navigate to your unique CIP URL **https://<tenant\>.my.centrify.net**
 
 2. Login to CIP using the following:
 
