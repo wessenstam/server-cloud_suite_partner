@@ -72,7 +72,7 @@ Part of the initial configuration includes creating Centrify Directory Service U
 3. Enter the required information to create a new Centrify Directory Service User for Centrify Connector Management.
 
     - **Username:** ConnectorMgr (leave the suffix to *labguide*)
-    - **E-Mail Address:** <mailto:ConnectorMgr@greensafe.lab>
+    - **E-Mail Address:** ConnectorMgr@greensafe.lab
     - **Display Name:** Centrify Connector Manager
     - **Password:** *Provided by Trainer*
     - **Check** the box to *Password never expires*
@@ -84,7 +84,7 @@ Part of the initial configuration includes creating Centrify Directory Service U
 6. Enter the required information to create a new Centrify Directory Service User for 3rd Party Contractor Support
 
     - **Username:** zContractor (leave the suffix to *labguide*)
-    - **E-Mail Address:** <mailto:contractors@greensafe.lab>
+    - **E-Mail Address:** contractors@greensafe.lab
     - **Display Name:** Contractor Support Account
     - **Password:** *Provided by Trainer*
     - **Check** the box to *Password never expires*
@@ -229,7 +229,7 @@ Centrify Connectors are deployed in the environment to facilitate specific acces
 
 16. Check the **Use Registration Code**
 
-17. Open the CID UI and navigate to **Settings > Network > Registration Codes**
+17. Open the CIP UI and navigate to **Settings > Network > Registration Codes**
 
     ![](images/lab-012.png)
 
