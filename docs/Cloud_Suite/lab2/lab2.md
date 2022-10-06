@@ -98,9 +98,24 @@ This second lab will cover:
 
 1. While in **cloud-win-server**, open *Putty* available on Desktop and connect to cloud-nix-server using the following details:
 
-   - **IP Address:** 10.0.0.37
-   - **Username:** root
-   - **Password:** provided by trainer
+    - **IP Address:** 10.0.0.37
+    - **Username:** root
+    - **Password:** provided by trainer
+
+    !!!note
+        When there is no connection to the RedHat server possible, please open the console of the RedHat server (cloud-linux-server) and login as root. Then run the following commands to see if the network is activated:
+
+        ```bash
+        ifconfig
+        ```
+        This should show an IP address of 10.0.0.37. When this is not there, please proceed
+
+        ```bash
+        ifup ens160
+        ifconfig
+        ```
+        Now you should see the 10.0.0.37 IP address shown in the machine
+
 
 2. Navigate to (temp) directory and check it contains client package using the following command:
 
