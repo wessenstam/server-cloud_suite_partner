@@ -19,7 +19,7 @@ This eighth lab will cover:
      
      - dc-server.greensafe.lab
      - apps-server.greensafe.lab
-     - https://\<tenant>.my.centrify.net
+     - https://<tenant\>.my.centrify.net
 
 
 ### Customizing the CIP
@@ -31,11 +31,11 @@ In this exercise, Alex (you) will login to the Centrify Identity Platform and pe
     - **Username:** afoster
     - **Password:** *Provided by Trainer*
 
-02. Launch Google Chrome and browse to your unique Identity Platform URL <https:/>/\<tenant>.my.centrify.net
+02. Launch Google Chrome and browse to your unique Identity Platform URL https://<tenant\>.my.centrify.net
 
 03. Login to your unique Identity Platform with the following credentials:
 
-    - **Username:** admin
+    - **Username:** admin@lab.<tenant\>
     - **Password:** *Provided by Trainer*
 
 04. On the Welcome Message, click **Cancel**
@@ -58,20 +58,22 @@ In this exercise, Alex (you) will login to the Centrify Identity Platform and pe
 
 Part of the initial configuration includes creating Centrify Directory Service User Accounts that will be used for specific privileged access to Greensafe servers without requiring specific domain identities. In this exercise, Alex (you) will create an account that will manage Centrify Connectors and a second account that will be used by 3rd party contractors who support specific Greensafe servers.
 
-1. While still in the CIP, use the main menu on the left to navigate to *Access > Users*
+1. While still in the CIP, navigate to Settings -> General -> Suffix
+2. Click the **Add** button and provide the suffix **labguide-####** 
+
+    !!!note
+        **The #### are the four numbers of your tenant**
+
+3. Navigate to *Access > Users*
 
 2. Click **Add User**
 
     ![](images/lab-003.png)
    
-    !!!note
-        When you get the message that you have to add a suffix to the username@ account, user **labguide** as te prefix!!
-
-        ![](images/lab-004.png)
-   
+    
 3. Enter the required information to create a new Centrify Directory Service User for Centrify Connector Management.
 
-    - **Username:** ConnectorMgr (leave the suffix to *labguide*)
+    - **Username:** ConnectorMgr (make sure the suffix is *labguide-####*)
     - **E-Mail Address:** ConnectorMgr@greensafe.lab
     - **Display Name:** Centrify Connector Manager
     - **Password:** *Provided by Trainer*
@@ -83,7 +85,7 @@ Part of the initial configuration includes creating Centrify Directory Service U
 
 6. Enter the required information to create a new Centrify Directory Service User for 3rd Party Contractor Support
 
-    - **Username:** zContractor (leave the suffix to *labguide*)
+    - **Username:** zContractor (make sure the suffix is *labguide-####*)
     - **E-Mail Address:** contractors@greensafe.lab
     - **Display Name:** Contractor Support Account
     - **Password:** *Provided by Trainer*
@@ -115,9 +117,13 @@ Privileged roles are created to group privilege to the infrastructure. Roles can
 
 09. Click **Add**
 
-10. Search for *ConnectorMgr@labguide* and click **Add**
+10. Search for *ConnectorMgr@labguide-####* and click **Add**
 
     ![](images/lab-005.png)
+
+    !!!Warning
+
+        The search is case sensitive!!!
 
 11. Click **Save**
 
