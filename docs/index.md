@@ -53,4 +53,4 @@ From left to right:
 Your instructor can help you "remotely". He/she is able to connect to your environment and discuss together where the issue is. When he/she connects to your environment the mouse movements are seen on your screen. Don't be scared it is not a virus, it's your instructor!!!
 
 ### General remark
-The screenshots you will see throughout the session are examples! They may be correct, but some are not sue to codes that only existed during the creation of the lab
+The screenshots you will see throughout the session are examples! They may be correct, but some are not due to codes that only existed during the creation of the lab
