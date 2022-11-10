@@ -26,7 +26,7 @@ This eleventh lab will cover:
 
 In this exercise, Alex (you) will use the Centrify Licensing Service to examine the installed licensing applied to the environment.
 
-01. On the **apps-server.greensafe.lab**, navigate to *Start Menu > Centrify Server Suite 2021.1 > Centrify Licensing Service Control Panel*
+01. On the **apps-server.greensafe.lab**, navigate to *Start Menu > Delinea Server Suite 2021.1 > Licensing Service Control Panel*
 
     ![](images/lab-001.png)
 
@@ -55,7 +55,7 @@ In this exercise, Alex (you) will use the Centrify Licensing Service to examine 
 
 10. Review the files included in the zip file. Close the explorer window
 
-11. Using the *Start Menu > Centrify Server Suite 2021.1 > Licensing Report*
+11. Using the *Start Menu > Delinea Server Suite 2021.1 > Licensing Report*
 
 12. Confirm the Domain Controller *dc-server.greensafe.lab* and click **Next**
 
@@ -73,9 +73,9 @@ In this exercise, Alex (you) will use the Centrify Licensing Service to examine 
 
 ### Analyzing the Environment
 
-In this exercise, Alex (you) will use Centrify Access Manager to examine possible issues with the health of the environment.
+In this exercise, Alex (you) will use Delinea Access Manager to examine possible issues with the health of the environment.
 
-1. Open **Access Manager**, right-click *Centrify Access Manager* and select **Analyze**
+1. Open **Access Manager**, right-click *Delinea Access Manager* and select **Analyze**
 
     ![](images/lab-004.png)
 
