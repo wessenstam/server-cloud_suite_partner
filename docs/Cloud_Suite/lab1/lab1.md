@@ -52,7 +52,7 @@ By default, the CIP does not allow systems to be reached via the internet. This 
 3. Check that the box next to **Allow access from a public network (web client only)** is checked. If not, check the box and click **Save**
 
     !!!tip
-        This setting can also be set on a system basis. Due to 
+        This setting can also be set on a per system basis. 
 
 ### Integrate Portal with Audit Installation
 
@@ -95,7 +95,7 @@ In this lab, we are going to learn how to create MFA profiles in CIP. The portal
 
 7. Click **Ok** to save
 
-#### Configure MFA Setting for contractor user
+<!-- #### Configure MFA Setting for contractor user
 
 1. Launch google chrome in incognito mode and navigate to your unique CIP URL **https://<tenant\>.my.centrify.net**
 
@@ -126,7 +126,7 @@ In this lab, we are going to learn how to create MFA profiles in CIP. The portal
 
     !!!Note
         Keep the incognito chrome session running, we will use it later, and switch to the other opened chrome session.
-
+-->
 #### Create Policy
 
 You will create a new policy specific for contractors, the policy will include mandating MFA profiles at Portal login for contractor's team members at all conditions.
@@ -195,13 +195,15 @@ You will create a new policy specific for contractors, the policy will include m
 
 18. Click **Save**
 
-19. Switch to **Chrome incognito** window. Login with **zcontractor@labguide** user, or refresh the page if it's still logged in.
+19. Switch to **Chrome incognito** window. Login with the **zcontractor@labguide** user.
 
 20. Click on the username dropdown list in the upper right corner, select **profile**
 
     ![](images/lab-025.png)
 
-21. Click on **Mobile Authenticator App** button
+21. Provide a security question and answer by clicking the Security Questions tile
+
+21. Click on **Mobile Authenticator App** tile
 
     ![](images/lab-040.png)
 
