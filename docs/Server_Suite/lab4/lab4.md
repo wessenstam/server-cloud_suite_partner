@@ -160,13 +160,13 @@ In this exercise, Alex (you) will configure the Delinea Zone Provisioning Agent 
 
     ![](images/lab-009a.png)
 
-03. Click the {fa}`search` (magnifing glass) button
+03. Click the **magnifying glass** button
 
 04. Find and select **cfyP_Global_Users** and Click **OK**
 
 05. Under the *Provisioning* tab, *Enable auto-provisioning of Group Profiles*
 
-06. Click the {fa}`search` (magnifing glass) button
+06. Click the **magnifying glass** button
 
 07. Find and select **cfyP_Global_Groups**
 
