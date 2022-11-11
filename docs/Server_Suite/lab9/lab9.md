@@ -653,7 +653,7 @@ Let's now configure the Centrify Identity Platform *Policy* for client side logi
 63. Run ```dzdo systemctl restart firewalld```
 
     !!!warning
-        If you receive errors on the command where you would see something like "Sorry cannot login..", have you logged into the cloud tenant as lbennet@greensafe.lab?
-        For MFA to work, as defined in the MFA policy, the user MUST have an account in the Cloud tenant. This can be established by opening the Admin Portal and logging in with the account. Without the account available in the cloud tenant, you might get errors pointing towards the Cloud Connector not available, MFA failures etc.
+        If you receive errors on the command, have you logged into the cloud tenant as lbennet@greensafe.lab and provided a security question?
+        For MFA to work, as defined in the MFA policy, the user MUST have an account in the Cloud tenant and at least 1 security question. This question can be thought up by yourself including the answer. This can be established by opening the Admin Portal and logging in with the account, click on the messagebox in the right bottom corner on Security Question, provide a question and answer. Without the account available in the cloud tenant with a security question, you might get errors pointing towards the Cloud Connector not available, MFA failures, incorrect passwords, etc.
 
 64. Was Laura Bennett permitted to run this command?
