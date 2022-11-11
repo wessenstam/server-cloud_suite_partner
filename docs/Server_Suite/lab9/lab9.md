@@ -308,6 +308,10 @@ Now that role-based permissions and privilege has been established, it is time t
 
     !!! Note
         Once the discovery profiles are completed the following systems should be listed (it may be necessary to refresh the page or use the user profile menu at the top right and select Reload Rights)
+        
+        If the below systems are not shown (even after the browser refresh), navigate to **Discovery > Systems and Accounts > Excluded Systems** and make sure that there are no systems being mentioned. If there are systems, please check the checkbox in front of the systems and click **Actions > Delete** and confirm the deletion. 
+        
+        A reason for systems being here is that the clean up of the cloud tenant didn't work 100% due to timings when we run the script. 
 
 31. You should see the following systems being mentioned:
 
