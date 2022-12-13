@@ -493,11 +493,11 @@ Greensafe has made the decision to add additional database servers. The new serv
 
       | Username | AD Group                           | Server         | Can the user login? (Unix Login Role Assigments tab) | Can the user Restart Services? (Commands Tab) |
       |----------|------------------------------------|----------------|-----------------------------------------|------------------------------------------------------------|
-      | bhughes  | Team_Helpdesk                      | db2-unix       | Yes                                     | Yes                                                        |
-      | badams   | Team_Sales                         | db2-unix       | Yes                                     | No                                                         |
-      | krogers  | Team_Finance & Team_UNIXAdmins     | db2-unix       | Yes                                     | Yes                                                        |
-      | lbennett | Team_Contractors                   | db2-unix       | Yes                                     | Yes                                                        |
-      | lscott   | Team_IT                            | db2-unix       | No                                      | No                                                         |
+      | bhughes  | Team_Helpdesk                      | db-unix       | Yes                                     | Yes                                                        |
+      | badams   | Team_Sales                         | db-unix       | Yes                                     | No                                                         |
+      | krogers  | Team_Finance & Team_UNIXAdmins     | db-unix       | Yes                                     | Yes                                                        |
+      | lbennett | Team_Contractors                   | db-unix       | Yes                                     | Yes                                                        |
+      | lscott   | Team_IT                            | db-unix       | No                                      | No                                                         |
 
 
 2. !!! Note
