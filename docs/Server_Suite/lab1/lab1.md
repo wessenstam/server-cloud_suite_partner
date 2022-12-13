@@ -69,7 +69,7 @@ Greensafe Payroll Services has recently purchased Delinea Server Suite. Alex Fos
 
 In this exercise, Alex (you) will complete the initial configuration of the solution using the management console, Delinea Access Manager. This configuration will include the creation of an active directory deployment structure and licensing.
 
-01. While still being on the *apps-server.greensafe.lab* open Windows Explorer and navigate to **\\\\10.0.0.254\DS2022\Training_Lics.txt**. Copy the DC License. The DA License will be needed later in the training.
+01. While still being on the *apps-server.greensafe.lab* open Windows Explorer and navigate to **\\\\10.0.0.254\shared\DS2022\Training_Lics.txt**. Copy the DC License. The DA License will be needed later in the training.
 
 03. **Close** the file
 
