@@ -620,6 +620,9 @@ Let's now configure the Centrify Identity Platform *Policy* for client side logi
 
 49. In *Access Manager*, expand to **Zone > Global Zone > Child Zone > Unix Zone**
 
+    !!!tip
+        When you don't see the Zones, right click **Zone** and select **Open Zone...**, then n the next screen click the **Find Now...** button and select the earlier created Global Zone. Now you will have access to the earlier defined zones. 
+
 50. Expand **Authorization**
 
 51. Expand **Unix Right Definitions**
